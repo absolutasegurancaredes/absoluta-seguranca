@@ -3,850 +3,82 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>Absoluta Segurança | Redes de Proteção em São Paulo</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<meta name="description" content="Instalação profissional de redes de proteção para janelas, sacadas, varandas, escadas e áreas externas em São Paulo. Segurança para sua família.">
+    <title>
+        Absoluta Segurança | Redes de Proteção em São Paulo
+    </title>
 
-<meta name="keywords" content="redes de proteção, tela de proteção, redes de proteção São Paulo, rede para janela, rede para sacada, proteção para crianças, proteção para gatos">
+    <meta
+        name="description"
+        content="Especialistas em redes de proteção para janelas, sacadas, varandas e outros ambientes. Também trabalhamos com telas, grades e varais. Atendimento em São Paulo, Litoral e Interior."
+    >
 
-<meta name="author" content="Absoluta Segurança">
+    <meta
+        name="keywords"
+        content="redes de proteção, telas de proteção, grades de proteção, varais, redes de proteção São Paulo, redes de proteção litoral, redes de proteção interior"
+    >
 
-<meta name="theme-color" content="#082B5A">
+    <meta name="author" content="Absoluta Segurança">
 
 
-<!-- GOOGLE ANALYTICS 4 -->
+    <!-- GOOGLE ANALYTICS 4 -->
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J08HYK3CEN"></script>
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-J08HYK3CEN">
+    </script>
 
-<script>
+    <script>
 
-window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-function gtag(){
-    dataLayer.push(arguments);
-}
+        function gtag(){
 
-gtag('js', new Date());
+            dataLayer.push(arguments);
 
-gtag('config', 'G-J08HYK3CEN');
+        }
 
-</script>
+        gtag('js', new Date());
 
+        gtag(
+            'config',
+            'G-J08HYK3CEN'
+        );
 
-<!-- GOOGLE FONTS -->
+    </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- GOOGLE FONTS -->
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
 
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
-<style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
-/* =========================
-   CORES
-========================= */
 
-:root{
+    <!-- CSS -->
 
-    --azul:#082B5A;
-    --azul-medio:#3F6FA6;
-    --azul-claro:#8FB7D9;
-    --branco:#F2F2F2;
-    --cinza:#CFCFCF;
-
-    --whatsapp:#25D366;
-    --whatsapp-hover:#1ebe5d;
-
-    --texto:#222;
-    --texto-claro:#666;
-
-}
-
-
-/* =========================
-   RESET
-========================= */
-
-*{
-
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-
-    font-family:'Montserrat',sans-serif;
-
-}
-
-
-html{
-
-    scroll-behavior:smooth;
-    scroll-padding-top:80px;
-
-}
-
-
-body{
-
-    background:#fff;
-    color:var(--texto);
-    overflow-x:hidden;
-
-}
-
-
-img{
-
-    max-width:100%;
-    display:block;
-
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-header{
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:80px;
-
-    padding:0 8%;
-
-    background:var(--azul);
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    gap:30px;
-
-    z-index:1000;
-
-    box-shadow:0 3px 15px rgba(0,0,0,.15);
-
-}
-
-
-/* LOGO */
-
-.logo{
-
-    display:flex;
-    align-items:center;
-
-    text-decoration:none;
-
-    flex-shrink:0;
-
-}
-
-
-.logo img{
-
-    width:190px;
-    height:auto;
-
-}
-
-
-/* MENU */
-
-nav{
-
-    display:flex;
-    align-items:center;
-    gap:22px;
-
-}
-
-
-nav a{
-
-    color:#fff;
-
-    text-decoration:none;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-
-nav a:hover{
-
-    color:var(--azul-claro);
-
-}
-
-
-/* BOTÃO WHATSAPP */
-
-.btn-whatsapp{
-
-    background:var(--whatsapp);
-
-    color:#fff;
-
-    padding:12px 22px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    font-size:14px;
-
-    font-weight:700;
-
-    white-space:nowrap;
-
-    transition:.3s;
-
-}
-
-
-.btn-whatsapp:hover{
-
-    background:var(--whatsapp-hover);
-
-    transform:translateY(-2px);
-
-}
-
-
-/* MENU MOBILE */
-
-.menu-toggle{
-
-    display:none;
-
-    background:none;
-
-    border:none;
-
-    color:#fff;
-
-    font-size:28px;
-
-    cursor:pointer;
-
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-
-    min-height:100vh;
-
-    display:flex;
-
-    align-items:center;
-
-    padding:140px 8% 80px;
-
-    background:
-
-    linear-gradient(
-
-        135deg,
-
-        rgba(8,43,90,.96),
-
-        rgba(63,111,166,.88)
-
-    ),
-
-    url("foto-capa.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    color:#fff;
-
-}
-
-
-.hero-content{
-
-    max-width:720px;
-
-}
-
-
-.hero h1{
-
-    font-size:clamp(38px,5vw,58px);
-
-    line-height:1.15;
-
-    margin-bottom:25px;
-
-    font-weight:800;
-
-}
-
-
-.hero p{
-
-    font-size:19px;
-
-    line-height:1.7;
-
-    margin-bottom:35px;
-
-    max-width:650px;
-
-}
-
-
-.botao{
-
-    display:inline-block;
-
-    background:var(--whatsapp);
-
-    color:#fff;
-
-    padding:16px 30px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    font-weight:700;
-
-    transition:.3s;
-
-}
-
-
-.botao:hover{
-
-    background:var(--whatsapp-hover);
-
-    transform:translateY(-2px);
-
-}
-
-
-/* =========================
-   SEÇÕES
-========================= */
-
-section{
-
-    padding:90px 8%;
-
-}
-
-
-.titulo{
-
-    text-align:center;
-
-    margin-bottom:50px;
-
-}
-
-
-.titulo h2{
-
-    font-size:clamp(30px,4vw,40px);
-
-    color:var(--azul);
-
-    margin-bottom:12px;
-
-}
-
-
-.titulo p{
-
-    color:var(--texto-claro);
-
-    font-size:16px;
-
-    line-height:1.6;
-
-}
-
-
-/* =========================
-   SERVIÇOS
-========================= */
-
-#servicos{
-
-    background:var(--branco);
-
-}
-
-
-.cards{
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(auto-fit,minmax(240px,1fr));
-
-    gap:25px;
-
-}
-
-
-.card{
-
-    background:#fff;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    border-top:5px solid var(--azul-medio);
-
-    transition:.3s;
-
-}
-
-
-.card:hover{
-
-    transform:translateY(-5px);
-
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
-
-}
-
-
-.card h3{
-
-    color:var(--azul);
-
-    margin-bottom:15px;
-
-    font-size:20px;
-
-}
-
-
-.card p{
-
-    line-height:1.7;
-
-    color:#555;
-
-}
-
-
-/* =========================
-   GALERIA
-========================= */
-
-.galeria-grid{
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(auto-fit,minmax(250px,1fr));
-
-    gap:20px;
-
-}
-
-
-.galeria-grid img{
-
-    width:100%;
-
-    height:260px;
-
-    object-fit:cover;
-
-    border-radius:15px;
-
-    transition:.3s;
-
-}
-
-
-.galeria-grid img:hover{
-
-    transform:scale(1.02);
-
-}
-
-
-/* =========================
-   DEPOIMENTOS
-========================= */
-
-#depoimentos{
-
-    background:var(--branco);
-
-}
-
-
-.depoimentos-grid{
-
-    display:grid;
-
-    grid-template-columns:
-
-    repeat(auto-fit,minmax(280px,1fr));
-
-    gap:25px;
-
-}
-
-
-.depoimento{
-
-    background:#fff;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.07);
-
-}
-
-
-.depoimento p{
-
-    color:#555;
-
-    line-height:1.7;
-
-    margin-bottom:20px;
-
-}
-
-
-.depoimento strong{
-
-    color:var(--azul);
-
-}
-
-
-/* =========================
-   FAQ
-========================= */
-
-.faq{
-
-    max-width:850px;
-
-    margin:auto;
-
-}
-
-
-.faq details{
-
-    background:#fff;
-
-    border-bottom:1px solid #ddd;
-
-    padding:20px 0;
-
-}
-
-
-.faq summary{
-
-    cursor:pointer;
-
-    font-weight:700;
-
-    color:var(--azul);
-
-}
-
-
-.faq p{
-
-    margin-top:15px;
-
-    color:#555;
-
-    line-height:1.7;
-
-}
-
-
-/* =========================
-   CONTATO
-========================= */
-
-.contato{
-
-    background:
-
-    linear-gradient(
-
-        135deg,
-
-        var(--azul),
-
-        var(--azul-medio)
-
-    );
-
-    color:#fff;
-
-    text-align:center;
-
-}
-
-
-.contato h2{
-
-    font-size:38px;
-
-    margin-bottom:20px;
-
-}
-
-
-.contato p{
-
-    max-width:700px;
-
-    margin:0 auto 30px;
-
-    line-height:1.7;
-
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-
-    background:#061F40;
-
-    color:#fff;
-
-    text-align:center;
-
-    padding:30px 8%;
-
-}
-
-
-footer p{
-
-    font-size:14px;
-
-    line-height:1.6;
-
-}
-
-
-/* =========================
-   WHATSAPP FLUTUANTE
-========================= */
-
-.whatsapp-flutuante{
-
-    position:fixed;
-
-    right:20px;
-
-    bottom:20px;
-
-    width:60px;
-
-    height:60px;
-
-    background:var(--whatsapp);
-
-    color:#fff;
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    text-decoration:none;
-
-    font-size:26px;
-
-    font-weight:700;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.25);
-
-    z-index:999;
-
-    transition:.3s;
-
-}
-
-
-.whatsapp-flutuante:hover{
-
-    transform:scale(1.08);
-
-    background:var(--whatsapp-hover);
-
-}
-
-
-/* =========================
-   RESPONSIVO
-========================= */
-
-@media(max-width:1000px){
-
-    nav{
-
-        display:none;
-
-        position:absolute;
-
-        top:80px;
-
-        left:0;
-
-        width:100%;
-
-        background:var(--azul);
-
-        flex-direction:column;
-
-        padding:25px;
-
-        gap:20px;
-
-    }
-
-
-    nav.ativo{
-
-        display:flex;
-
-    }
-
-
-    nav a{
-
-        font-size:16px;
-
-    }
-
-
-    .menu-toggle{
-
-        display:block;
-
-    }
-
-
-    header{
-
-        padding:0 5%;
-
-    }
-
-
-    .btn-whatsapp{
-
-        display:none;
-
-    }
-
-
-    .logo img{
-
-        width:160px;
-
-    }
-
-}
-
-
-@media(max-width:600px){
-
-    section{
-
-        padding:70px 6%;
-
-    }
-
-
-    .hero{
-
-        padding:120px 6% 70px;
-
-    }
-
-
-    .hero h1{
-
-        font-size:38px;
-
-    }
-
-
-    .hero p{
-
-        font-size:17px;
-
-    }
-
-
-    .contato h2{
-
-        font-size:30px;
-
-    }
-
-
-    .whatsapp-flutuante{
-
-        width:55px;
-
-        height:55px;
-
-        right:15px;
-
-        bottom:15px;
-
-    }
-
-}
-
-</style>
+    <link
+        rel="stylesheet"
+        href="estilos.css"
+    >
 
 </head>
 
@@ -854,667 +86,963 @@ footer p{
 <body>
 
 
-<!-- =========================
+<!-- =====================================================
      HEADER
-========================= -->
+===================================================== -->
 
-<header>
-
-
-<a href="#inicio" class="logo">
-
-<img
-
-src="logo.png"
-
-alt="Absoluta Segurança - Redes de Proteção"
-
->
-
-</a>
+<header id="header">
 
 
-<nav id="menu">
+    <a
+        href="#inicio"
+        class="logo"
+    >
 
-<a href="#inicio">Início</a>
+        <img
+            src="logo.png"
+            alt="Absoluta Segurança"
+        >
 
-<a href="#servicos">Serviços</a>
-
-<a href="#galeria">Galeria</a>
-
-<a href="#depoimentos">Depoimentos</a>
-
-<a href="#faq">FAQ</a>
-
-<a href="#contato">Contato</a>
-
-</nav>
+    </a>
 
 
-<a
+    <button
+        class="menu-toggle"
+        aria-label="Abrir menu"
+    >
 
-class="btn-whatsapp js-whatsapp"
+        ☰
 
-href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento."
-
->
-
-WhatsApp
-
-</a>
+    </button>
 
 
-<button
+    <nav id="nav">
 
-class="menu-toggle"
+        <a href="#inicio">
+            Início
+        </a>
 
-id="menuToggle"
+        <a href="#sobre">
+            Sobre
+        </a>
 
-aria-label="Abrir menu"
+        <a href="#servicos">
+            Serviços
+        </a>
 
->
+        <a href="#galeria">
+            Galeria
+        </a>
 
-☰
+        <a href="#depoimentos">
+            Depoimentos
+        </a>
 
-</button>
+        <a href="#faq">
+            FAQ
+        </a>
+
+        <a href="#contato">
+            Contato
+        </a>
+
+    </nav>
+
+
+    <a
+        href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20da%20Absoluta%20Segurança%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+        class="btn-whatsapp js-whatsapp"
+    >
+
+        WhatsApp
+
+    </a>
 
 
 </header>
 
 
-<!-- =========================
+
+<!-- =====================================================
      HERO
-========================= -->
+===================================================== -->
 
-<section class="hero" id="inicio">
-
-
-<div class="hero-content">
-
-
-<h1>
-
-Proteção para quem você mais ama.
-
-</h1>
-
-
-<p>
-
-Instalação profissional de redes de proteção para janelas, sacadas, varandas, escadas e áreas externas.
-
-Mais segurança para crianças, idosos e animais de estimação.
-
-</p>
-
-
-<a
-
-href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento."
-
-class="botao js-whatsapp"
-
+<section
+    class="hero"
+    id="inicio"
 >
 
-Solicitar orçamento pelo WhatsApp
 
-</a>
+    <div class="hero-content">
 
 
-</div>
+        <span class="hero-tag">
+
+            Absoluta Segurança
+
+        </span>
+
+
+        <h1>
+
+            Proteção para quem você mais ama.
+
+        </h1>
+
+
+        <p>
+
+            Especialistas em
+
+            <strong>
+                redes de proteção
+            </strong>
+
+            para janelas, sacadas, varandas e diferentes ambientes.
+
+            Também trabalhamos com telas, grades e varais.
+
+        </p>
+
+
+        <p class="hero-local">
+
+            📍 São Paulo • Litoral • Interior
+
+        </p>
+
+
+        <a
+            href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20da%20Absoluta%20Segurança%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+            class="botao js-whatsapp"
+        >
+
+            Solicitar orçamento pelo WhatsApp
+
+        </a>
+
+
+    </div>
 
 
 </section>
 
 
-<!-- =========================
+
+<!-- =====================================================
+     SOBRE
+===================================================== -->
+
+<section
+    class="sobre-protecao"
+    id="sobre"
+>
+
+
+    <div class="titulo">
+
+        <h2>
+
+            Segurança para sua família
+
+        </h2>
+
+        <p>
+
+            Experiência, cuidado e soluções para proteger o seu espaço.
+
+        </p>
+
+    </div>
+
+
+    <div class="sobre-conteudo">
+
+
+        <div class="sobre-texto">
+
+
+            <h3>
+
+                Especialistas em Redes de Proteção
+
+            </h3>
+
+
+            <p>
+
+                Quando o assunto é segurança, as redes de proteção são uma solução prática para diferentes ambientes residenciais e comerciais.
+
+            </p>
+
+
+            <p>
+
+                Trabalhamos principalmente com instalação de redes de proteção para janelas, sacadas, varandas, escadas e outros espaços que necessitam de proteção adicional.
+
+            </p>
+
+
+            <p>
+
+                As redes ajudam a reduzir riscos de acidentes e proporcionam mais tranquilidade para famílias com crianças e animais de estimação.
+
+            </p>
+
+
+            <p>
+
+                Também oferecemos soluções complementares, como telas de proteção, grades de proteção e varais.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="sobre-destaques">
+
+
+            <div class="destaque">
+
+                <span>
+                    ✓
+                </span>
+
+                <div>
+
+                    <h4>
+                        Redes de Proteção
+                    </h4>
+
+                    <p>
+                        Nosso principal serviço para proteger diferentes ambientes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="destaque">
+
+                <span>
+                    ✓
+                </span>
+
+                <div>
+
+                    <h4>
+                        Instalação Profissional
+                    </h4>
+
+                    <p>
+                        Instalação realizada com atenção aos detalhes de cada ambiente.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="destaque">
+
+                <span>
+                    ✓
+                </span>
+
+                <div>
+
+                    <h4>
+                        Atendimento Personalizado
+                    </h4>
+
+                    <p>
+                        Avaliamos cada espaço de acordo com a necessidade do cliente.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="destaque">
+
+                <span>
+                    ✓
+                </span>
+
+                <div>
+
+                    <h4>
+                        São Paulo e Região
+                    </h4>
+
+                    <p>
+                        Atendimento em São Paulo, Litoral e Interior.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
      SERVIÇOS
-========================= -->
+===================================================== -->
 
-<section id="servicos">
-
-
-<div class="titulo">
-
-<h2>Nossos Serviços</h2>
-
-<p>
-
-Soluções de proteção para diferentes ambientes da sua casa ou empresa.
-
-</p>
-
-</div>
+<section
+    id="servicos"
+>
 
 
-<div class="cards">
+    <div class="titulo">
+
+        <h2>
+
+            Nossos Serviços
+
+        </h2>
+
+        <p>
+
+            Nosso foco é proteger. Conheça nossas principais soluções.
+
+        </p>
+
+    </div>
 
 
-<div class="card">
 
-<h3>Redes para Janelas</h3>
-
-<p>
-
-Proteção para janelas de apartamentos e casas, ajudando a evitar quedas e acidentes.
-
-</p>
-
-</div>
+    <div class="cards">
 
 
-<div class="card">
+        <!-- SERVIÇO PRINCIPAL -->
 
-<h3>Redes para Sacadas</h3>
-
-<p>
-
-Instalação de redes de proteção em sacadas e varandas para aumentar a segurança da sua família.
-
-</p>
-
-</div>
+        <div class="card card-principal">
 
 
-<div class="card">
+            <div class="card-badge">
 
-<h3>Proteção para Crianças</h3>
+                PRINCIPAL
 
-<p>
-
-Mais tranquilidade para famílias com crianças pequenas em ambientes com risco de queda.
-
-</p>
-
-</div>
+            </div>
 
 
-<div class="card">
+            <div class="card-icon">
 
-<h3>Proteção para Animais</h3>
+                🛡️
 
-<p>
-
-Redes de proteção para ajudar a manter gatos e outros animais domésticos seguros.
-
-</p>
-
-</div>
+            </div>
 
 
-</div>
+            <h3>
+
+                Redes de Proteção
+
+            </h3>
+
+
+            <p>
+
+                Nosso principal serviço.
+
+                Instalação de redes de proteção para janelas, sacadas, varandas, escadas e outros ambientes.
+
+                Uma solução para aumentar a segurança de crianças, famílias e animais de estimação.
+
+            </p>
+
+
+            <a
+                href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20rede%20de%20proteção."
+                class="card-link js-whatsapp"
+            >
+
+                Solicitar orçamento →
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- TELAS -->
+
+        <div class="card">
+
+
+            <div class="card-icon">
+
+                🏠
+
+            </div>
+
+
+            <h3>
+
+                Telas de Proteção
+
+            </h3>
+
+
+            <p>
+
+                Soluções em telas de proteção para diferentes ambientes, proporcionando uma camada adicional de segurança sem comprometer a ventilação e a iluminação.
+
+            </p>
+
+
+            <a
+                href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20tela%20de%20proteção."
+                class="card-link js-whatsapp"
+            >
+
+                Solicitar orçamento →
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- GRADES -->
+
+        <div class="card">
+
+
+            <div class="card-icon">
+
+                🔒
+
+            </div>
+
+
+            <h3>
+
+                Grades de Proteção
+
+            </h3>
+
+
+            <p>
+
+                Grades de proteção para aumentar a segurança de janelas, portas e outros espaços, de acordo com as características de cada ambiente.
+
+            </p>
+
+
+            <a
+                href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20grade%20de%20proteção."
+                class="card-link js-whatsapp"
+            >
+
+                Solicitar orçamento →
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- VARAIS -->
+
+        <div class="card">
+
+
+            <div class="card-icon">
+
+                🧺
+
+            </div>
+
+
+            <h3>
+
+                Varais
+
+            </h3>
+
+
+            <p>
+
+                Soluções práticas em varais para otimizar espaços e facilitar o dia a dia, com opções para diferentes ambientes e necessidades.
+
+            </p>
+
+
+            <a
+                href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20varal."
+                class="card-link js-whatsapp"
+            >
+
+                Solicitar orçamento →
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
 
 </section>
 
 
-<!-- =========================
+
+<!-- =====================================================
+     MAIS SOBRE REDES
+===================================================== -->
+
+<section
+    class="mais-redes"
+>
+
+
+    <div class="titulo">
+
+        <h2>
+
+            Mais sobre Redes de Proteção
+
+        </h2>
+
+        <p>
+
+            Uma solução prática para aumentar a segurança de diferentes ambientes.
+
+        </p>
+
+    </div>
+
+
+    <div class="mais-redes-conteudo">
+
+
+        <p>
+
+            As redes de proteção podem ser instaladas em janelas, sacadas, varandas, terraços, vãos de escadas e outros locais que necessitam de proteção adicional.
+
+        </p>
+
+
+        <p>
+
+            Elas são especialmente úteis para famílias com crianças e animais de estimação, ajudando a reduzir o risco de quedas e acidentes.
+
+        </p>
+
+
+        <p>
+
+            Além das residências e apartamentos, as redes também podem ser utilizadas em diferentes espaços, como áreas de lazer, playgrounds e quadras esportivas, conforme a necessidade de cada ambiente.
+
+        </p>
+
+
+        <p>
+
+            Uma das vantagens das redes de proteção é permitir a circulação de ar e a entrada de luz natural, mantendo a visibilidade do ambiente externo.
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
      GALERIA
-========================= -->
+===================================================== -->
 
-<section id="galeria">
-
-
-<div class="titulo">
-
-<h2>Instalações Realizadas</h2>
-
-<p>
-
-Confira alguns exemplos dos nossos trabalhos.
-
-</p>
-
-</div>
-
-
-<div class="galeria-grid">
-
-
-<img
-
-src="foto1.jpg"
-
-alt="Instalação de rede de proteção"
-
-loading="lazy"
-
+<section
+    id="galeria"
 >
 
 
-<img
+    <div class="titulo">
 
-src="foto2.jpg"
+        <h2>
 
-alt="Rede de proteção instalada em sacada"
+            Instalações Realizadas
 
-loading="lazy"
+        </h2>
 
->
+        <p>
 
+            Confira alguns dos nossos trabalhos.
 
-<img
+        </p>
 
-src="foto3.jpg"
-
-alt="Rede de proteção para janela"
-
-loading="lazy"
-
->
+    </div>
 
 
-<img
-
-src="foto4.jpg"
-
-alt="Instalação profissional de rede de proteção"
-
-loading="lazy"
-
->
+    <div class="galeria-grid">
 
 
-</div>
+        <img
+            src="foto1.jpg"
+            alt="Instalação de rede de proteção"
+            loading="lazy"
+        >
+
+
+        <img
+            src="foto2.jpg"
+            alt="Rede de proteção instalada"
+            loading="lazy"
+        >
+
+
+        <img
+            src="foto3.jpg"
+            alt="Instalação profissional de rede"
+            loading="lazy"
+        >
+
+
+        <img
+            src="foto4.jpg"
+            alt="Serviço de proteção Absoluta Segurança"
+            loading="lazy"
+        >
+
+
+    </div>
+
 
 </section>
 
 
-<!-- =========================
+
+<!-- =====================================================
      DEPOIMENTOS
-========================= -->
+===================================================== -->
 
-<section id="depoimentos">
-
-
-<div class="titulo">
-
-<h2>O que nossos clientes dizem</h2>
-
-<p>
-
-A segurança e a satisfação dos nossos clientes são prioridades.
-
-</p>
-
-</div>
-
-
-<div class="depoimentos-grid">
-
-
-<div class="depoimento">
-
-<p>
-
-"Serviço muito bem feito, atendimento excelente e instalação rápida. Ficamos muito mais tranquilos em casa."
-
-</p>
-
-<strong>
-
-Cliente Absoluta Segurança
-
-</strong>
-
-</div>
-
-
-<div class="depoimento">
-
-<p>
-
-"Gostamos muito do resultado. A rede ficou bem instalada e trouxe mais segurança para nossa família."
-
-</p>
-
-<strong>
-
-Cliente Absoluta Segurança
-
-</strong>
-
-</div>
-
-
-<div class="depoimento">
-
-<p>
-
-"Atendimento muito bom e instalação profissional. Recomendo para quem precisa colocar rede de proteção."
-
-</p>
-
-<strong>
-
-Cliente Absoluta Segurança
-
-</strong>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     FAQ
-========================= -->
-
-<section id="faq">
-
-
-<div class="titulo">
-
-<h2>Perguntas Frequentes</h2>
-
-<p>
-
-Tire suas principais dúvidas sobre redes de proteção.
-
-</p>
-
-</div>
-
-
-<div class="faq">
-
-
-<details>
-
-<summary>
-
-Onde vocês realizam instalações?
-
-</summary>
-
-<p>
-
-Atendemos clientes em diferentes regiões de São Paulo. Entre em contato pelo WhatsApp para confirmar a disponibilidade de atendimento na sua região.
-
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-
-Vocês fazem orçamento?
-
-</summary>
-
-<p>
-
-Sim. Entre em contato pelo WhatsApp para solicitar um orçamento e obter mais informações sobre o serviço.
-
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-
-As redes podem ser instaladas em apartamentos?
-
-</summary>
-
-<p>
-
-Sim. As redes podem ser utilizadas em janelas, sacadas e outros ambientes, conforme as características do local.
-
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-
-A instalação é feita por profissionais?
-
-</summary>
-
-<p>
-
-Sim. A instalação é realizada de acordo com as características do ambiente e do local onde a rede será instalada.
-
-</p>
-
-</details>
-
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     CONTATO
-========================= -->
-
-<section class="contato" id="contato">
-
-
-<h2>
-
-Precisa de uma rede de proteção?
-
-</h2>
-
-
-<p>
-
-Fale com a Absoluta Segurança e solicite seu orçamento.
-
-Nossa equipe está pronta para ajudar você a encontrar a melhor solução para o seu ambiente.
-
-</p>
-
-
-<a
-
-href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento."
-
-class="botao js-whatsapp"
-
+<section
+    id="depoimentos"
 >
 
-Solicitar orçamento
 
-</a>
+    <div class="titulo">
+
+        <h2>
+
+            O que nossos clientes dizem
+
+        </h2>
+
+        <p>
+
+            A confiança de quem já contratou nossos serviços.
+
+        </p>
+
+    </div>
+
+
+    <div class="depoimentos-grid">
+
+
+        <div class="depoimento">
+
+            <p>
+
+                "Excelente atendimento e instalação muito bem feita. Ficamos muito satisfeitos com o resultado."
+
+            </p>
+
+            <strong>
+
+                Cliente Absoluta Segurança
+
+            </strong>
+
+        </div>
+
+
+        <div class="depoimento">
+
+            <p>
+
+                "O serviço foi realizado com muito cuidado e atenção. Recomendo para quem procura segurança e qualidade."
+
+            </p>
+
+            <strong>
+
+                Cliente Absoluta Segurança
+
+            </strong>
+
+        </div>
+
+
+        <div class="depoimento">
+
+            <p>
+
+                "Desde o primeiro contato fomos muito bem atendidos. O resultado ficou excelente."
+
+            </p>
+
+            <strong>
+
+                Cliente Absoluta Segurança
+
+            </strong>
+
+        </div>
+
+
+    </div>
 
 
 </section>
 
 
-<!-- =========================
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section
+    id="faq"
+>
+
+
+    <div class="titulo">
+
+        <h2>
+
+            Perguntas Frequentes
+
+        </h2>
+
+        <p>
+
+            Tire suas principais dúvidas.
+
+        </p>
+
+    </div>
+
+
+    <div class="faq">
+
+
+        <details>
+
+            <summary>
+
+                Quais serviços a Absoluta Segurança oferece?
+
+            </summary>
+
+            <p>
+
+                Nosso principal serviço é a instalação de redes de proteção. Também trabalhamos com telas de proteção, grades de proteção e varais.
+
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+
+                Onde vocês atendem?
+
+            </summary>
+
+            <p>
+
+                Atendemos clientes em São Paulo, Litoral e Interior.
+
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+
+                Vocês fazem orçamento?
+
+            </summary>
+
+            <p>
+
+                Sim. Entre em contato pelo WhatsApp para solicitar um orçamento e obter mais informações sobre o serviço.
+
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+
+                As redes podem ser instaladas em apartamentos?
+
+            </summary>
+
+            <p>
+
+                Sim. As redes de proteção podem ser utilizadas em diversos ambientes de apartamentos, como janelas, sacadas e varandas, conforme as características do local.
+
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+
+                Vocês trabalham com proteção para animais?
+
+            </summary>
+
+            <p>
+
+                Sim. As redes podem ser uma solução para aumentar a segurança de ambientes onde vivem animais de estimação, especialmente gatos.
+
+            </p>
+
+        </details>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTATO
+===================================================== -->
+
+<section
+    class="contato"
+    id="contato"
+>
+
+
+    <h2>
+
+        Precisa de uma solução de proteção?
+
+    </h2>
+
+
+    <p>
+
+        Fale com a Absoluta Segurança e solicite seu orçamento.
+
+        Nosso principal foco são as redes de proteção, mas também trabalhamos com telas, grades e varais.
+
+    </p>
+
+
+    <a
+        href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20da%20Absoluta%20Segurança%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+        class="botao js-whatsapp"
+    >
+
+        Falar pelo WhatsApp
+
+    </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
      FOOTER
-========================= -->
+===================================================== -->
 
 <footer>
 
-<p>
 
-© 2026 Absoluta Segurança. Todos os direitos reservados.
+    <p>
 
-</p>
+        <strong>
+            Absoluta Segurança
+        </strong>
 
-<p>
+    </p>
 
-Redes de Proteção | São Paulo
 
-</p>
+    <p>
+
+        Redes de Proteção • Telas • Grades • Varais
+
+    </p>
+
+
+    <p>
+
+        São Paulo • Litoral • Interior
+
+    </p>
+
+
+    <p>
+
+        © 2026 Absoluta Segurança. Todos os direitos reservados.
+
+    </p>
+
 
 </footer>
 
 
-<!-- =========================
+
+<!-- =====================================================
      WHATSAPP FLUTUANTE
-========================= -->
+===================================================== -->
 
 <a
-
-href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento."
-
-class="whatsapp-flutuante js-whatsapp"
-
-aria-label="Falar com a Absoluta Segurança pelo WhatsApp"
-
+    href="https://wa.me/5511947044930?text=Olá%2C%20vim%20pelo%20site%20da%20Absoluta%20Segurança%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+    class="whatsapp-flutuante js-whatsapp"
+    aria-label="Falar com a Absoluta Segurança pelo WhatsApp"
 >
 
-☎
-
-</a>
-
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
-
-<script>
-
-
-/* =========================
-   RASTREAMENTO DO WHATSAPP
-========================= */
-
-document.querySelectorAll('.js-whatsapp').forEach(function(botao){
-
-    botao.addEventListener('click', function(){
-
-        if(typeof gtag === 'function'){
-
-            gtag('event', 'clique_whatsapp', {
-
-                event_category: 'Contato',
-
-                event_label: 'WhatsApp',
-
-                value: 1
-
-            });
-
-        }
-
-    });
-
-});
-
-
-/* =========================
-   MENU MOBILE
-========================= */
-
-const menuToggle = document.getElementById('menuToggle');
-
-const menu = document.getElementById('menu');
-
-
-menuToggle.addEventListener('click', function(){
-
-    menu.classList.toggle('ativo');
-
-});
-
-
-/* =========================
-   FECHAR MENU
-========================= */
-
-document.querySelectorAll('#menu a').forEach(function(link){
-
-    link.addEventListener('click', function(){
-
-        menu.classList.remove('ativo');
-
-    });
-
-});
-
-
-</script>
-
-
-</body>
-
-</html>
-
-height:60px;
-
-background:#25D366;
-
-color:white;
-
-border-radius:50%;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:30px;
-
-text-decoration:none;
-
-box-shadow:0 5px 20px rgba(0,0,0,.3);
-
-z-index:999;
-
-">
-
-
-☏
-
+    ☎
 
 </a>
 
 
 
+<!-- JAVASCRIPT -->
 
-
-
-
-<script>
-
-
-// Rastreamento extra dos cliques no WhatsApp
-
-document.querySelectorAll('a[href*="wa.me"]').forEach(function(botao){
-
-
-botao.addEventListener('click', function(){
-
-
-if(typeof gtag === "function"){
-
-
-gtag('event','CliqueWhatsApp');
-
-
-}
-
-
-});
-
-
-});
-
-
-
-</script>
-
-
-
+<script src="script.js"></script>
 
 
 </body>
 
 </html>
-<link rel="stylesheet" href="style.css">
