@@ -1,93 +1,128 @@
-// Rolagem suave do menu
-
-document.querySelectorAll('nav a').forEach(link => {
-
-  link.addEventListener('click', function(e) {
-
-      const destino = document.querySelector(
-          this.getAttribute('href')
-      );
-
-      if (destino) {
-
-          e.preventDefault();
-
-          destino.scrollIntoView({
-              behavior: 'smooth'
-          });
-
-      }
-
-  });
-
-});
+/* =========================================================
+   ABSOLUTA SEGURANÇA
+   JAVASCRIPT
+========================================================= */
 
 
+/* =========================================================
+   MENU MOBILE
+========================================================= */
 
-// Rastreamento de cliques no WhatsApp para GA4 e Google Ads
+const menuToggle = document.querySelector('.menu-toggle');
 
-document.querySelectorAll('a[href*="wa.me"]').forEach(botao => {
-
-  botao.addEventListener('click', function() {
-
-      if (typeof gtag === "function") {
-
-          gtag('event', 'CliqueWhatsApp', {
-
-              event_category: 'Contato',
-
-              event_label: 'WhatsApp Absoluta Segurança'
-
-          });
-
-      }
-
-  });
-
-});
+const nav = document.querySelector('#nav');
 
 
-
-// Animação simples ao aparecer na tela
-
-const elementos = document.querySelectorAll('.card');
+if (menuToggle && nav) {
 
 
-const observador = new IntersectionObserver((entradas) => {
+    menuToggle.addEventListener(
+
+        'click',
+
+        function() {
+
+            nav.classList.toggle('ativo');
+
+        }
+
+    );
 
 
-  entradas.forEach(entrada => {
+}
 
 
-      if (entrada.isIntersecting) {
+/* =========================================================
+   FECHAR MENU AO CLICAR EM UM LINK
+========================================================= */
+
+const linksMenu = document.querySelectorAll(
+
+    '#nav a'
+
+);
 
 
-          entrada.target.style.opacity = "1";
+linksMenu.forEach(
 
-          entrada.target.style.transform = "translateY(0)";
-
-
-      }
+    function(link) {
 
 
-  });
+        link.addEventListener(
+
+            'click',
+
+            function() {
+
+                nav.classList.remove('ativo');
+
+            }
+
+        );
 
 
-});
+    }
+
+);
 
 
+/* =========================================================
+   RASTREAMENTO ÚNICO DO WHATSAPP
+========================================================= */
 
-elementos.forEach(card => {
+const botoesWhatsApp = document.querySelectorAll(
 
+    '.js-whatsapp'
 
-  card.style.opacity = "0";
-
-  card.style.transform = "translateY(30px)";
-
-  card.style.transition = "0.6s";
-
-
-  observador.observe(card);
+);
 
 
-});
+botoesWhatsApp.forEach(
+
+    function(botao) {
+
+
+        botao.addEventListener(
+
+            'click',
+
+            function() {
+
+
+                if (
+
+                    typeof gtag === 'function'
+
+                ) {
+
+
+                    gtag(
+
+                        'event',
+
+                        'clique_whatsapp',
+
+                        {
+
+                            'event_category': 'Contato',
+
+                            'event_label': 'WhatsApp',
+
+                            'value': 1
+
+                        }
+
+                    );
+
+
+                }
+
+
+            }
+
+        );
+
+
+    }
+
+);
