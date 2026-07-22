@@ -1,495 +1,267 @@
-/* =========================================================
-   ABSOLUTA SEGURANÇA
-   JAVASCRIPT PRINCIPAL
-========================================================= */
-
 document.addEventListener("DOMContentLoaded", function () {
 
-
-    /* =====================================================
+    /* =========================
        MENU MOBILE
-    ===================================================== */
+    ========================== */
 
     const menuToggle = document.querySelector(".menu-toggle");
-
-    const nav = document.querySelector("#nav");
-
+    const nav = document.querySelector(".header nav");
 
     if (menuToggle && nav) {
 
-
         menuToggle.addEventListener("click", function () {
 
-            const menuAberto = nav.classList.toggle("ativo");
-
+            const ativo = nav.classList.toggle("ativo");
 
             menuToggle.setAttribute(
                 "aria-expanded",
-                menuAberto ? "true" : "false"
-            );
-
-
-            menuToggle.setAttribute(
-                "aria-label",
-                menuAberto
-                    ? "Fechar menu"
-                    : "Abrir menu"
+                ativo ? "true" : "false"
             );
 
         });
 
 
-        /* =================================================
-           FECHAR MENU AO CLICAR EM UM LINK
-        ================================================= */
-
         const linksMenu = nav.querySelectorAll("a");
 
-
         linksMenu.forEach(function (link) {
-
 
             link.addEventListener("click", function () {
 
                 nav.classList.remove("ativo");
 
-
                 menuToggle.setAttribute(
                     "aria-expanded",
                     "false"
-                );
-
-
-                menuToggle.setAttribute(
-                    "aria-label",
-                    "Abrir menu"
                 );
 
             });
 
         });
 
-
-        /* =================================================
-           FECHAR MENU AO CLICAR FORA
-        ================================================= */
-
-        document.addEventListener("click", function (event) {
+    }
 
 
-            const clicouNoMenu =
-                nav.contains(event.target);
+    /* =========================
+       CARROSSEL CRIANÇA E PET
+    ========================== */
+
+    const carousel = document.querySelector(".familia-carousel");
+
+    if (carousel) {
+
+        const slides = carousel.querySelectorAll(".familia-slide");
+
+        const anterior = carousel.querySelector(".carousel-prev");
+
+        const proximo = carousel.querySelector(".carousel-next");
+
+        const indicadores = carousel.querySelectorAll(".carousel-dot");
+
+        let slideAtual = 0;
 
 
-            const clicouNoBotao =
-                menuToggle.contains(event.target);
+        function mostrarSlide(index) {
 
-
-            if (
-                !clicouNoMenu &&
-                !clicouNoBotao &&
-                nav.classList.contains("ativo")
-            ) {
-
-
-                nav.classList.remove("ativo");
-
-
-                menuToggle.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
-
-
-                menuToggle.setAttribute(
-                    "aria-label",
-                    "Abrir menu"
-                );
-
+            if (slides.length === 0) {
+                return;
             }
 
+
+            if (index >= slides.length) {
+                slideAtual = 0;
+            }
+
+            else if (index < 0) {
+                slideAtual = slides.length - 1;
+            }
+
+            else {
+                slideAtual = index;
+            }
+
+
+            slides.forEach(function (slide, i) {
+
+                slide.classList.toggle(
+                    "ativo",
+                    i === slideAtual
+                );
+
+            });
+
+
+            indicadores.forEach(function (dot, i) {
+
+                dot.classList.toggle(
+                    "ativo",
+                    i === slideAtual
+                );
+
+            });
+
+        }
+
+
+        if (proximo) {
+
+            proximo.addEventListener("click", function () {
+
+                mostrarSlide(slideAtual + 1);
+
+            });
+
+        }
+
+
+        if (anterior) {
+
+            anterior.addEventListener("click", function () {
+
+                mostrarSlide(slideAtual - 1);
+
+            });
+
+        }
+
+
+        indicadores.forEach(function (dot, i) {
+
+            dot.addEventListener("click", function () {
+
+                mostrarSlide(i);
+
+            });
+
         });
+
+
+        /* =========================
+           PASSAR PARA O LADO COM MOUSE
+        ========================== */
+
+        let inicioX = 0;
+
+        let fimX = 0;
+
+
+        carousel.addEventListener(
+            "mousedown",
+            function (event) {
+
+                inicioX = event.clientX;
+
+            }
+        );
+
+
+        carousel.addEventListener(
+            "mouseup",
+            function (event) {
+
+                fimX = event.clientX;
+
+                const distancia = fimX - inicioX;
+
+
+                if (Math.abs(distancia) > 50) {
+
+                    if (distancia < 0) {
+
+                        mostrarSlide(slideAtual + 1);
+
+                    }
+
+                    else {
+
+                        mostrarSlide(slideAtual - 1);
+
+                    }
+
+                }
+
+            }
+        );
+
+
+        /* =========================
+           TOUCH NO CELULAR
+        ========================== */
+
+        carousel.addEventListener(
+            "touchstart",
+            function (event) {
+
+                inicioX = event.touches[0].clientX;
+
+            },
+            { passive: true }
+        );
+
+
+        carousel.addEventListener(
+            "touchend",
+            function (event) {
+
+                fimX = event.changedTouches[0].clientX;
+
+                const distancia = fimX - inicioX;
+
+
+                if (Math.abs(distancia) > 50) {
+
+                    if (distancia < 0) {
+
+                        mostrarSlide(slideAtual + 1);
+
+                    }
+
+                    else {
+
+                        mostrarSlide(slideAtual - 1);
+
+                    }
+
+                }
+
+            },
+            { passive: true }
+        );
+
+
+        /* =========================
+           INICIA NO PRIMEIRO SLIDE
+        ========================== */
+
+        mostrarSlide(0);
 
     }
 
 
+    /* =========================
+       WHATSAPP
+    ========================== */
 
-    /* =====================================================
-       RASTREAMENTO DE CLIQUES NO WHATSAPP
-       GOOGLE ANALYTICS 4
-    ===================================================== */
+    const whatsappLinks = document.querySelectorAll(".js-whatsapp");
 
-    const botoesWhatsApp =
-        document.querySelectorAll(".js-whatsapp");
+    whatsappLinks.forEach(function (link) {
 
-
-    botoesWhatsApp.forEach(function (botao) {
-
-
-        botao.addEventListener("click", function () {
-
+        link.addEventListener("click", function () {
 
             if (typeof gtag === "function") {
-
 
                 gtag(
                     "event",
                     "clique_whatsapp",
                     {
-
-                        event_category:
-                            "Contato",
-
-                        event_label:
-                            "WhatsApp",
-
-                        transport_type:
-                            "beacon"
-
+                        event_category: "Contato",
+                        event_label: "WhatsApp"
                     }
                 );
-
 
             }
 
         });
 
     });
-
-
-
-    /* =====================================================
-       RASTREAMENTO DE CLIQUES NOS SERVIÇOS
-    ===================================================== */
-
-    const linksServicos =
-        document.querySelectorAll(
-            "#servicos .card-link"
-        );
-
-
-    linksServicos.forEach(function (link) {
-
-
-        link.addEventListener("click", function () {
-
-
-            const card =
-                link.closest(".card");
-
-
-            const titulo =
-                card
-                    ? card.querySelector("h3")
-                    : null;
-
-
-            const nomeServico =
-                titulo
-                    ? titulo.textContent.trim()
-                    : "Serviço";
-
-
-            if (typeof gtag === "function") {
-
-
-                gtag(
-                    "event",
-                    "solicitacao_orcamento",
-                    {
-
-                        event_category:
-                            "Serviços",
-
-                        event_label:
-                            nomeServico,
-
-                        servico:
-                            nomeServico,
-
-                        transport_type:
-                            "beacon"
-
-                    }
-                );
-
-
-            }
-
-        });
-
-    });
-
-
-
-    /* =====================================================
-       RASTREAMENTO DO BOTÃO PRINCIPAL DO HERO
-    ===================================================== */
-
-    const botaoHero =
-        document.querySelector(
-            ".hero .js-whatsapp"
-        );
-
-
-    if (botaoHero) {
-
-
-        botaoHero.addEventListener(
-            "click",
-            function () {
-
-
-                if (typeof gtag === "function") {
-
-
-                    gtag(
-                        "event",
-                        "orcamento_hero",
-                        {
-
-                            event_category:
-                                "Conversão",
-
-                            event_label:
-                                "Botão principal do site",
-
-                            transport_type:
-                                "beacon"
-
-                        }
-                    );
-
-
-                }
-
-            }
-        );
-
-    }
-
-
-
-    /* =====================================================
-       RASTREAMENTO DO BOTÃO DE CONTATO
-    ===================================================== */
-
-    const botaoContato =
-        document.querySelector(
-            ".contato .js-whatsapp"
-        );
-
-
-    if (botaoContato) {
-
-
-        botaoContato.addEventListener(
-            "click",
-            function () {
-
-
-                if (typeof gtag === "function") {
-
-
-                    gtag(
-                        "event",
-                        "orcamento_contato",
-                        {
-
-                            event_category:
-                                "Conversão",
-
-                            event_label:
-                                "Seção de contato",
-
-                            transport_type:
-                                "beacon"
-
-                        }
-                    );
-
-
-                }
-
-            }
-        );
-
-    }
-
-
-
-    /* =====================================================
-       RASTREAMENTO DA GALERIA
-    ===================================================== */
-
-    const imagensGaleria =
-        document.querySelectorAll(
-            ".galeria-grid img"
-        );
-
-
-    imagensGaleria.forEach(function (imagem) {
-
-
-        imagem.addEventListener(
-            "click",
-            function () {
-
-
-                if (typeof gtag === "function") {
-
-
-                    gtag(
-                        "event",
-                        "visualizacao_galeria",
-                        {
-
-                            event_category:
-                                "Galeria",
-
-                            event_label:
-                                imagem.alt || "Imagem da galeria"
-
-                        }
-                    );
-
-
-                }
-
-            }
-        );
-
-    });
-
-
-
-    /* =====================================================
-       RASTREAMENTO DO FAQ
-    ===================================================== */
-
-    const perguntasFAQ =
-        document.querySelectorAll(
-            ".faq details"
-        );
-
-
-    perguntasFAQ.forEach(function (pergunta) {
-
-
-        pergunta.addEventListener(
-            "toggle",
-            function () {
-
-
-                if (
-                    pergunta.open &&
-                    typeof gtag === "function"
-                ) {
-
-
-                    const titulo =
-                        pergunta.querySelector(
-                            "summary"
-                        );
-
-
-                    const perguntaTexto =
-                        titulo
-                            ? titulo.textContent.trim()
-                            : "Pergunta frequente";
-
-
-                    gtag(
-                        "event",
-                        "visualizacao_faq",
-                        {
-
-                            event_category:
-                                "FAQ",
-
-                            event_label:
-                                perguntaTexto
-
-                        }
-                    );
-
-                }
-
-            }
-        );
-
-    });
-
-
-
-    /* =====================================================
-       ROLAGEM SUAVE PARA LINKS INTERNOS
-    ===================================================== */
-
-    const linksInternos =
-        document.querySelectorAll(
-            'a[href^="#"]'
-        );
-
-
-    linksInternos.forEach(function (link) {
-
-
-        link.addEventListener(
-            "click",
-            function (event) {
-
-
-                const destino =
-                    link.getAttribute("href");
-
-
-                if (
-                    !destino ||
-                    destino === "#"
-                ) {
-
-                    return;
-
-                }
-
-
-                const elemento =
-                    document.querySelector(
-                        destino
-                    );
-
-
-                if (elemento) {
-
-
-                    event.preventDefault();
-
-
-                    elemento.scrollIntoView({
-
-                        behavior: "smooth",
-
-                        block: "start"
-
-                    });
-
-                }
-
-            }
-        );
-
-    });
-
-
-
-    /* =====================================================
-       FEEDBACK DE CARREGAMENTO
-    ===================================================== */
-
-    document.body.classList.add(
-        "pagina-carregada"
-    );
-
 
 });
