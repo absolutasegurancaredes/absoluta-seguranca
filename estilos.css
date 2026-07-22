@@ -1,6 +1,6 @@
 :root {
 
-    --azul: #0077B6;
+    --azul: #001F4D;
     --azul-medio: #3F8DBD;
     --azul-claro: #8FB7D9;
 
@@ -176,7 +176,7 @@ HEADER
 
     gap: 25px;
 
-    background: var(--azul-logo);
+    background: #001F4D;
 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 
@@ -315,9 +315,9 @@ HERO
 
         linear-gradient(
             90deg,
-            rgba(0, 91, 143, 0.96) 0%,
-            rgba(0, 91, 143, 0.82) 45%,
-            rgba(0, 91, 143, 0.45) 100%
+            rgba(0, 31, 77, 0.96) 0%,
+            rgba(0, 31, 77, 0.82) 45%,
+            rgba(0, 31, 77, 0.45) 100%
         ),
 
         url("rede na sacada.jpeg");
@@ -518,7 +518,7 @@ BENEFÍCIOS
 
     transform: translateY(-5px);
 
-    box-shadow: 0 15px 35px rgba(0,91,143,0.08);
+    box-shadow: 0 15px 35px rgba(0,31,77,0.08);
 
 }
 
@@ -726,7 +726,7 @@ SERVIÇOS
 
     transform: translateY(-6px);
 
-    box-shadow: 0 15px 40px rgba(0,91,143,0.10);
+    box-shadow: 0 15px 40px rgba(0,31,77,0.10);
 
 }
 
@@ -965,7 +965,7 @@ CARROSSEL CRIANÇAS E PETS
 
 .carrossel-btn:hover {
 
-    background: rgba(0,91,143,0.9);
+    background: rgba(0,31,77,0.9);
 
 }
 
@@ -1363,8 +1363,8 @@ CTA
 
         linear-gradient(
             135deg,
-            var(--azul-logo-escuro),
-            var(--azul-logo)
+            #001F4D,
+            #001F4D
         );
 
     color: #ffffff;
@@ -1447,7 +1447,7 @@ FOOTER
 
 footer {
 
-    background: var(--azul-logo);
+    background: #001F4D;
 
     color: #ffffff;
 
@@ -1532,7 +1532,7 @@ footer {
 
     border-top: 1px solid rgba(255,255,255,0.2);
 
-    background: var(--azul-logo-escuro);
+    background: #001F4D;
 
     text-align: center;
 
@@ -1620,7 +1620,7 @@ TABLET
 
         gap: 20px;
 
-        background: var(--azul-logo);
+        background: #001F4D;
 
         box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 
@@ -1746,6 +1746,8 @@ CELULAR
 
         padding: 0 6%;
 
+        background: #001F4D;
+
     }
 
 
@@ -1761,6 +1763,8 @@ CELULAR
     .header nav {
 
         top: 70px;
+
+        background: #001F4D;
 
     }
 
