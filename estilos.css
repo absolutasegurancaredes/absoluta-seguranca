@@ -1,8 +1,11 @@
 :root {
 
-    --azul: #082B5A;
-    --azul-medio: #3F6FA6;
+    --azul: #0077B6;
+    --azul-medio: #3F8DBD;
     --azul-claro: #8FB7D9;
+
+    --azul-logo: #0077B6;
+    --azul-logo-escuro: #005B8F;
 
     --branco: #F2F2F2;
     --cinza: #CFCFCF;
@@ -30,12 +33,15 @@ RESET
 
 }
 
+
 html {
 
     scroll-behavior: smooth;
+
     scroll-padding-top: 80px;
 
 }
+
 
 body {
 
@@ -51,6 +57,7 @@ body {
 
 }
 
+
 img {
 
     display: block;
@@ -61,11 +68,13 @@ img {
 
 }
 
+
 a {
 
     text-decoration: none;
 
 }
+
 
 button {
 
@@ -73,10 +82,6 @@ button {
 
 }
 
-
-/* =========================
-CONTAINER
-========================= */
 
 .container {
 
@@ -86,10 +91,6 @@ CONTAINER
 
 }
 
-
-/* =========================
-TÍTULOS
-========================= */
 
 .section-label {
 
@@ -109,6 +110,7 @@ TÍTULOS
 
 }
 
+
 .section-heading {
 
     max-width: 720px;
@@ -118,6 +120,7 @@ TÍTULOS
     text-align: center;
 
 }
+
 
 .section-heading h2 {
 
@@ -132,6 +135,7 @@ TÍTULOS
     font-weight: 800;
 
 }
+
 
 .section-heading p {
 
@@ -172,16 +176,16 @@ HEADER
 
     gap: 25px;
 
-    /* Azul integrado ao logo */
+    /*
+    Azul integrado ao fundo do logo
+    */
 
-    background: #082B5A;
+    background: var(--azul-logo);
 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 
 }
 
-
-/* LOGO */
 
 .logo {
 
@@ -191,30 +195,26 @@ HEADER
 
     flex-shrink: 0;
 
-    height: 58px;
-
 }
+
 
 .logo img {
 
-    display: block;
-
     width: 165px;
-
-    height: 58px;
 
     max-height: 58px;
 
     object-fit: contain;
 
-    /* IMPORTANTE: não aplicar filtro */
+    /*
+    Não aplicar filtro.
+    O logo original já possui suas próprias cores.
+    */
 
     filter: none;
 
 }
 
-
-/* MENU */
 
 .header nav {
 
@@ -225,6 +225,7 @@ HEADER
     gap: 25px;
 
 }
+
 
 .header nav a {
 
@@ -238,14 +239,13 @@ HEADER
 
 }
 
+
 .header nav a:hover {
 
     color: var(--azul-claro);
 
 }
 
-
-/* BOTÃO WHATSAPP */
 
 .btn-whatsapp {
 
@@ -273,6 +273,7 @@ HEADER
 
 }
 
+
 .btn-whatsapp:hover {
 
     background: var(--whatsapp-hover);
@@ -281,8 +282,6 @@ HEADER
 
 }
 
-
-/* MENU MOBILE */
 
 .menu-toggle {
 
@@ -325,9 +324,9 @@ HERO
 
         linear-gradient(
             90deg,
-            rgba(8, 43, 90, 0.96) 0%,
-            rgba(8, 43, 90, 0.82) 45%,
-            rgba(8, 43, 90, 0.45) 100%
+            rgba(0, 91, 143, 0.96) 0%,
+            rgba(0, 91, 143, 0.82) 45%,
+            rgba(0, 91, 143, 0.45) 100%
         ),
 
         url("rede na sacada.jpeg");
@@ -340,6 +339,7 @@ HERO
 
 }
 
+
 .hero-content {
 
     position: relative;
@@ -349,6 +349,7 @@ HERO
     width: min(680px, 100%);
 
 }
+
 
 .hero-label {
 
@@ -366,6 +367,7 @@ HERO
 
 }
 
+
 .hero h1 {
 
     max-width: 650px;
@@ -382,6 +384,7 @@ HERO
 
 }
 
+
 .hero p {
 
     max-width: 600px;
@@ -396,11 +399,13 @@ HERO
 
 }
 
+
 .hero p strong {
 
     color: #ffffff;
 
 }
+
 
 .hero-buttons {
 
@@ -411,6 +416,7 @@ HERO
     gap: 15px;
 
 }
+
 
 .btn-primary {
 
@@ -440,6 +446,7 @@ HERO
 
 }
 
+
 .btn-primary:hover {
 
     background: var(--whatsapp-hover);
@@ -447,6 +454,7 @@ HERO
     transform: translateY(-3px);
 
 }
+
 
 .hero-location {
 
@@ -465,6 +473,7 @@ HERO
     font-weight: 600;
 
 }
+
 
 .hero-location span {
 
@@ -487,6 +496,7 @@ BENEFÍCIOS
 
 }
 
+
 .beneficios-grid {
 
     display: grid;
@@ -496,6 +506,7 @@ BENEFÍCIOS
     gap: 20px;
 
 }
+
 
 .beneficio {
 
@@ -511,13 +522,15 @@ BENEFÍCIOS
 
 }
 
+
 .beneficio:hover {
 
     transform: translateY(-5px);
 
-    box-shadow: 0 15px 35px rgba(8,43,90,0.08);
+    box-shadow: 0 15px 35px rgba(0,91,143,0.08);
 
 }
+
 
 .beneficio-icon {
 
@@ -543,6 +556,7 @@ BENEFÍCIOS
 
 }
 
+
 .beneficio h3 {
 
     margin-bottom: 10px;
@@ -552,6 +566,7 @@ BENEFÍCIOS
     font-size: 17px;
 
 }
+
 
 .beneficio p {
 
@@ -576,6 +591,7 @@ SERVIÇO DESTAQUE
 
 }
 
+
 .servico-destaque-grid {
 
     display: grid;
@@ -588,6 +604,7 @@ SERVIÇO DESTAQUE
 
 }
 
+
 .servico-imagem {
 
     overflow: hidden;
@@ -598,6 +615,7 @@ SERVIÇO DESTAQUE
 
 }
 
+
 .servico-imagem img {
 
     height: 520px;
@@ -605,6 +623,7 @@ SERVIÇO DESTAQUE
     object-fit: cover;
 
 }
+
 
 .servico-texto h2 {
 
@@ -618,6 +637,7 @@ SERVIÇO DESTAQUE
 
 }
 
+
 .servico-texto p {
 
     margin-bottom: 18px;
@@ -630,6 +650,7 @@ SERVIÇO DESTAQUE
 
 }
 
+
 .servico-texto ul {
 
     margin: 25px 0 30px;
@@ -639,6 +660,7 @@ SERVIÇO DESTAQUE
     list-style: none;
 
 }
+
 
 .servico-texto li {
 
@@ -657,6 +679,7 @@ SERVIÇO DESTAQUE
     font-weight: 600;
 
 }
+
 
 .servico-texto li span {
 
@@ -679,6 +702,7 @@ SERVIÇOS
 
 }
 
+
 .servicos-grid {
 
     display: grid;
@@ -688,6 +712,7 @@ SERVIÇOS
     gap: 25px;
 
 }
+
 
 .servico-card {
 
@@ -705,13 +730,15 @@ SERVIÇOS
 
 }
 
+
 .servico-card:hover {
 
     transform: translateY(-6px);
 
-    box-shadow: 0 15px 40px rgba(8,43,90,0.10);
+    box-shadow: 0 15px 40px rgba(0,91,143,0.10);
 
 }
+
 
 .servico-card img {
 
@@ -723,11 +750,13 @@ SERVIÇOS
 
 }
 
+
 .servico-card-content {
 
     padding: 28px;
 
 }
+
 
 .servico-card h3 {
 
@@ -738,6 +767,7 @@ SERVIÇOS
     font-size: 21px;
 
 }
+
 
 .servico-card p {
 
@@ -751,6 +781,7 @@ SERVIÇOS
 
 }
 
+
 .card-link {
 
     color: var(--azul-medio);
@@ -760,6 +791,7 @@ SERVIÇOS
     font-weight: 800;
 
 }
+
 
 .card-link:hover {
 
@@ -780,6 +812,7 @@ FAMÍLIA
 
 }
 
+
 .familia-grid {
 
     display: grid;
@@ -791,6 +824,7 @@ FAMÍLIA
     align-items: center;
 
 }
+
 
 .familia-texto h2 {
 
@@ -804,6 +838,7 @@ FAMÍLIA
 
 }
 
+
 .familia-texto p {
 
     margin-bottom: 18px;
@@ -816,6 +851,7 @@ FAMÍLIA
 
 }
 
+
 .familia-texto .btn-primary {
 
     margin-top: 15px;
@@ -823,19 +859,29 @@ FAMÍLIA
 }
 
 
-/* =========================
-CARROSSEL CRIANÇAS E PETS
-========================= */
-
 .familia-imagem {
-
-    position: relative;
 
     overflow: hidden;
 
     border-radius: 20px;
 
+    position: relative;
+
 }
+
+
+.familia-imagem img {
+
+    height: 470px;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================
+CARROSSEL CRIANÇAS E PETS
+========================= */
 
 .familia-carrossel {
 
@@ -851,43 +897,32 @@ CARROSSEL CRIANÇAS E PETS
 
 }
 
+
 .familia-slides {
 
-    position: relative;
+    display: flex;
 
     width: 100%;
 
     height: 100%;
 
+    transition: transform 0.5s ease;
+
 }
+
 
 .familia-slide {
 
-    position: absolute;
-
-    inset: 0;
+    min-width: 100%;
 
     width: 100%;
 
     height: 100%;
 
-    opacity: 0;
-
-    visibility: hidden;
-
-    transition: opacity 0.5s ease;
+    flex-shrink: 0;
 
 }
 
-.familia-slide.ativo {
-
-    opacity: 1;
-
-    visibility: visible;
-
-    z-index: 1;
-
-}
 
 .familia-slide img {
 
@@ -899,8 +934,6 @@ CARROSSEL CRIANÇAS E PETS
 
 }
 
-
-/* BOTÕES DO CARROSSEL */
 
 .carrossel-btn {
 
@@ -920,35 +953,38 @@ CARROSSEL CRIANÇAS E PETS
 
     justify-content: center;
 
-    border: 0;
+    transform: translateY(-50%);
+
+    border: none;
 
     border-radius: 50%;
 
-    background: rgba(8,43,90,0.75);
+    background: rgba(0,0,0,0.55);
 
     color: #ffffff;
 
-    font-size: 18px;
+    font-size: 20px;
 
     cursor: pointer;
-
-    transform: translateY(-50%);
 
     transition: 0.3s ease;
 
 }
 
+
 .carrossel-btn:hover {
 
-    background: var(--azul);
+    background: rgba(0,91,143,0.9);
 
 }
+
 
 .carrossel-btn.anterior {
 
     left: 15px;
 
 }
+
 
 .carrossel-btn.proximo {
 
@@ -957,15 +993,13 @@ CARROSSEL CRIANÇAS E PETS
 }
 
 
-/* INDICADORES */
-
 .carrossel-indicadores {
 
     position: absolute;
 
-    left: 50%;
-
     bottom: 15px;
+
+    left: 50%;
 
     z-index: 5;
 
@@ -977,6 +1011,7 @@ CARROSSEL CRIANÇAS E PETS
 
 }
 
+
 .indicador {
 
     width: 10px;
@@ -985,11 +1020,11 @@ CARROSSEL CRIANÇAS E PETS
 
     padding: 0;
 
-    border: 2px solid #ffffff;
+    border: none;
 
     border-radius: 50%;
 
-    background: transparent;
+    background: rgba(255,255,255,0.55);
 
     cursor: pointer;
 
@@ -997,7 +1032,12 @@ CARROSSEL CRIANÇAS E PETS
 
 }
 
+
 .indicador.ativo {
+
+    width: 24px;
+
+    border-radius: 10px;
 
     background: #ffffff;
 
@@ -1016,6 +1056,7 @@ GALERIA
 
 }
 
+
 .galeria-grid {
 
     display: grid;
@@ -1028,6 +1069,7 @@ GALERIA
 
 }
 
+
 .galeria-item {
 
     overflow: hidden;
@@ -1036,6 +1078,7 @@ GALERIA
 
 }
 
+
 .galeria-item.grande {
 
     grid-column: span 2;
@@ -1043,6 +1086,7 @@ GALERIA
     grid-row: span 2;
 
 }
+
 
 .galeria-item img {
 
@@ -1055,6 +1099,7 @@ GALERIA
     transition: 0.4s ease;
 
 }
+
 
 .galeria-item:hover img {
 
@@ -1075,6 +1120,7 @@ SOBRE
 
 }
 
+
 .sobre-grid {
 
     display: grid;
@@ -1087,6 +1133,7 @@ SOBRE
 
 }
 
+
 .sobre-imagem {
 
     overflow: hidden;
@@ -1095,6 +1142,7 @@ SOBRE
 
 }
 
+
 .sobre-imagem img {
 
     height: 500px;
@@ -1102,6 +1150,7 @@ SOBRE
     object-fit: cover;
 
 }
+
 
 .sobre-texto h2 {
 
@@ -1115,6 +1164,7 @@ SOBRE
 
 }
 
+
 .sobre-texto p {
 
     margin-bottom: 18px;
@@ -1126,6 +1176,7 @@ SOBRE
     line-height: 1.8;
 
 }
+
 
 .area-atendimento {
 
@@ -1145,6 +1196,7 @@ SOBRE
 
 }
 
+
 .area-atendimento strong {
 
     color: var(--azul);
@@ -1152,6 +1204,7 @@ SOBRE
     font-size: 15px;
 
 }
+
 
 .area-atendimento span {
 
@@ -1174,6 +1227,7 @@ COMO FUNCIONA
 
 }
 
+
 .passos {
 
     display: grid;
@@ -1184,6 +1238,7 @@ COMO FUNCIONA
 
 }
 
+
 .passo {
 
     text-align: center;
@@ -1191,6 +1246,7 @@ COMO FUNCIONA
     padding: 35px;
 
 }
+
 
 .passo > span {
 
@@ -1218,6 +1274,7 @@ COMO FUNCIONA
 
 }
 
+
 .passo h3 {
 
     margin-bottom: 12px;
@@ -1227,6 +1284,7 @@ COMO FUNCIONA
     font-size: 19px;
 
 }
+
 
 .passo p {
 
@@ -1251,6 +1309,7 @@ FAQ
 
 }
 
+
 .faq {
 
     width: min(850px, 100%);
@@ -1258,6 +1317,7 @@ FAQ
     margin: 0 auto;
 
 }
+
 
 .faq details {
 
@@ -1273,6 +1333,7 @@ FAQ
 
 }
 
+
 .faq summary {
 
     cursor: pointer;
@@ -1284,6 +1345,7 @@ FAQ
     font-weight: 700;
 
 }
+
 
 .faq p {
 
@@ -1310,8 +1372,8 @@ CTA
 
         linear-gradient(
             135deg,
-            var(--azul),
-            var(--azul-medio)
+            var(--azul-logo-escuro),
+            var(--azul-logo)
         );
 
     color: #ffffff;
@@ -1320,11 +1382,13 @@ CTA
 
 }
 
+
 .cta .section-label {
 
     color: var(--azul-claro);
 
 }
+
 
 .cta h2 {
 
@@ -1338,6 +1402,7 @@ CTA
 
 }
 
+
 .cta p {
 
     margin-bottom: 30px;
@@ -1347,6 +1412,7 @@ CTA
     font-size: 16px;
 
 }
+
 
 .btn-cta {
 
@@ -1374,6 +1440,7 @@ CTA
 
 }
 
+
 .btn-cta:hover {
 
     background: var(--whatsapp-hover);
@@ -1389,13 +1456,17 @@ FOOTER
 
 footer {
 
-    /* Mesmo azul do cabeçalho e integrado ao logo */
+    /*
+    Mesmo azul do cabeçalho,
+    integrado ao fundo do logo
+    */
 
-    background: #082B5A;
+    background: var(--azul-logo);
 
     color: #ffffff;
 
 }
+
 
 .footer-content {
 
@@ -1410,15 +1481,9 @@ footer {
 }
 
 
-/* LOGO DO RODAPÉ */
-
 .footer-logo {
 
-    display: block;
-
     width: 160px;
-
-    height: 60px;
 
     max-height: 60px;
 
@@ -1426,23 +1491,27 @@ footer {
 
     margin-bottom: 20px;
 
-    /* IMPORTANTE: não aplicar filtro */
+    /*
+    Não alterar as cores originais do logo
+    */
 
     filter: none;
 
 }
 
+
 .footer-content p {
 
     max-width: 300px;
 
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.85);
 
     font-size: 13px;
 
     line-height: 1.7;
 
 }
+
 
 .footer-content h3 {
 
@@ -1454,17 +1523,19 @@ footer {
 
 }
 
+
 .footer-content a {
 
     display: block;
 
     margin-bottom: 8px;
 
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.85);
 
     font-size: 13px;
 
 }
+
 
 .footer-content a:hover {
 
@@ -1472,19 +1543,23 @@ footer {
 
 }
 
+
 .footer-bottom {
 
     padding: 20px 5%;
 
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    background: var(--azul-logo-escuro);
 
     text-align: center;
 
 }
 
+
 .footer-bottom p {
 
-    color: rgba(255,255,255,0.55);
+    color: rgba(255,255,255,0.75);
 
     font-size: 12px;
 
@@ -1529,6 +1604,7 @@ WHATSAPP FLUTUANTE
 
 }
 
+
 .whatsapp-flutuante:hover {
 
     background: var(--whatsapp-hover);
@@ -1562,17 +1638,19 @@ TABLET
 
         gap: 20px;
 
-        background: #082B5A;
+        background: var(--azul-logo);
 
         box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 
     }
+
 
     .header nav.ativo {
 
         display: flex;
 
     }
+
 
     .menu-toggle {
 
@@ -1586,17 +1664,20 @@ TABLET
 
     }
 
+
     .header > .btn-whatsapp {
 
         display: none;
 
     }
 
+
     .beneficios-grid {
 
         grid-template-columns: repeat(2, 1fr);
 
     }
+
 
     .servico-destaque-grid,
 
@@ -1610,11 +1691,13 @@ TABLET
 
     }
 
+
     .servico-destaque-grid .servico-imagem {
 
         order: 1;
 
     }
+
 
     .servico-destaque-grid .servico-texto {
 
@@ -1622,11 +1705,13 @@ TABLET
 
     }
 
+
     .galeria-grid {
 
         grid-template-columns: repeat(2, 1fr);
 
     }
+
 
     .galeria-item.grande {
 
@@ -1634,11 +1719,13 @@ TABLET
 
     }
 
+
     .servicos-grid {
 
         grid-template-columns: repeat(2, 1fr);
 
     }
+
 
     .passos {
 
@@ -1647,6 +1734,7 @@ TABLET
         gap: 10px;
 
     }
+
 
     .footer-content {
 
@@ -1669,6 +1757,7 @@ CELULAR
 
     }
 
+
     .header {
 
         height: 70px;
@@ -1677,27 +1766,22 @@ CELULAR
 
     }
 
-    .logo {
-
-        height: 50px;
-
-    }
 
     .logo img {
 
         width: 140px;
 
-        height: 50px;
-
         max-height: 50px;
 
     }
+
 
     .header nav {
 
         top: 70px;
 
     }
+
 
     .hero {
 
@@ -1709,17 +1793,20 @@ CELULAR
 
     }
 
+
     .hero h1 {
 
         font-size: 40px;
 
     }
 
+
     .hero p {
 
         font-size: 16px;
 
     }
+
 
     .hero-buttons,
 
@@ -1729,6 +1816,7 @@ CELULAR
 
     }
 
+
     .btn-primary {
 
         width: 100%;
@@ -1736,6 +1824,7 @@ CELULAR
         text-align: center;
 
     }
+
 
     .beneficios,
 
@@ -1759,11 +1848,13 @@ CELULAR
 
     }
 
+
     .beneficios-grid {
 
         grid-template-columns: 1fr;
 
     }
+
 
     .servicos-grid {
 
@@ -1771,17 +1862,13 @@ CELULAR
 
     }
 
+
     .servico-imagem img {
 
         height: 350px;
 
     }
 
-    .familia-carrossel {
-
-        height: 350px;
-
-    }
 
     .familia-imagem img,
 
@@ -1791,6 +1878,14 @@ CELULAR
 
     }
 
+
+    .familia-carrossel {
+
+        height: 350px;
+
+    }
+
+
     .galeria-grid {
 
         grid-template-columns: 1fr 1fr;
@@ -1798,6 +1893,7 @@ CELULAR
         grid-auto-rows: 160px;
 
     }
+
 
     .galeria-item.grande {
 
@@ -1807,11 +1903,13 @@ CELULAR
 
     }
 
+
     .galeria-item img {
 
         object-fit: cover;
 
     }
+
 
     .footer-content {
 
@@ -1822,6 +1920,7 @@ CELULAR
         padding: 50px 0;
 
     }
+
 
     .whatsapp-flutuante {
 
@@ -1838,6 +1937,10 @@ CELULAR
 }
 
 
+/* =========================
+TELAS MUITO PEQUENAS
+========================= */
+
 @media (max-width: 380px) {
 
     .hero h1 {
@@ -1845,6 +1948,7 @@ CELULAR
         font-size: 34px;
 
     }
+
 
     .section-heading h2,
 
