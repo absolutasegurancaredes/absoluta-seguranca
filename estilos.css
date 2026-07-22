@@ -98,7 +98,7 @@ button {
 }
 
 .logo img {
-    width: 120px;
+    width: 125px;
     height: auto;
     object-fit: contain;
 }
@@ -119,6 +119,9 @@ button {
 .header nav a:hover {
     color: var(--azul-claro);
 }
+
+
+/* BOTÃO WHATSAPP DO CABEÇALHO */
 
 .btn-whatsapp {
     display: inline-flex;
@@ -192,6 +195,11 @@ button {
     z-index: 2;
 
     width: min(1180px, 90%);
+
+    /*
+       Conteúdo mais para a esquerda,
+       como estava anteriormente
+    */
     margin-left: 5%;
     margin-right: auto;
 
@@ -243,6 +251,9 @@ button {
     flex-wrap: wrap;
 }
 
+
+/* BOTÃO PRINCIPAL AGORA VERDE */
+
 .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -250,7 +261,7 @@ button {
 
     padding: 15px 25px;
 
-    background: var(--azul-medio);
+    background: var(--whatsapp);
     color: #ffffff;
 
     border-radius: 8px;
@@ -262,7 +273,7 @@ button {
 }
 
 .btn-primary:hover {
-    background: #347da9;
+    background: var(--whatsapp-hover);
     transform: translateY(-2px);
 }
 
@@ -1004,6 +1015,9 @@ button {
     font-size: 16px;
 }
 
+
+/* BOTÃO CTA VERDE */
+
 .btn-cta {
     display: inline-flex;
 
@@ -1053,8 +1067,11 @@ footer {
     padding-bottom: 50px;
 }
 
+
+/* LOGO DO RODAPÉ MENOR */
+
 .footer-logo {
-    width: 140px;
+    width: 125px;
 
     margin-bottom: 20px;
 }
@@ -1253,9 +1270,10 @@ footer {
     }
 
     .hero-content {
-        padding: 60px 0;
+        width: 90%;
         margin-left: 5%;
-        margin-right: 5%;
+        margin-right: auto;
+        padding: 60px 0;
     }
 
     .hero h1 {
@@ -1315,8 +1333,18 @@ footer {
         padding: 0 5%;
     }
 
+    .logo img {
+        width: 105px;
+    }
+
     .hero {
         min-height: 680px;
+    }
+
+    .hero-content {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: auto;
     }
 
     .hero h1 {
