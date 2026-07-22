@@ -17,11 +17,6 @@
 
 }
 
-
-/* =========================
-RESET
-========================= */
-
 * {
 
     margin: 0;
@@ -30,14 +25,12 @@ RESET
 
 }
 
-
 html {
 
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 
 }
-
 
 body {
 
@@ -53,7 +46,6 @@ body {
 
 }
 
-
 img {
 
     display: block;
@@ -64,20 +56,17 @@ img {
 
 }
 
-
 a {
 
     text-decoration: none;
 
 }
 
-
 button {
 
     font-family: inherit;
 
 }
-
 
 .container {
 
@@ -86,7 +75,6 @@ button {
     margin: 0 auto;
 
 }
-
 
 .section-label {
 
@@ -106,7 +94,6 @@ button {
 
 }
 
-
 .section-heading {
 
     max-width: 720px;
@@ -116,7 +103,6 @@ button {
     text-align: center;
 
 }
-
 
 .section-heading h2 {
 
@@ -131,7 +117,6 @@ button {
     font-weight: 800;
 
 }
-
 
 .section-heading p {
 
@@ -172,14 +157,13 @@ HEADER
 
     gap: 25px;
 
-    /* Azul ajustado para combinar com o logo */
+    /* Azul integrado ao fundo do logo */
 
     background: #082B5A;
 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 
 }
-
 
 .logo {
 
@@ -189,31 +173,21 @@ HEADER
 
     flex-shrink: 0;
 
-    height: 100%;
-
 }
-
 
 .logo img {
 
-    display: block;
-
     width: 165px;
-
-    max-width: 165px;
-
-    height: auto;
 
     max-height: 58px;
 
     object-fit: contain;
 
-    /* Não aplicar filtro no logo */
+    /* Mantém as cores originais do logo */
 
     filter: none;
 
 }
-
 
 .header nav {
 
@@ -224,7 +198,6 @@ HEADER
     gap: 25px;
 
 }
-
 
 .header nav a {
 
@@ -238,13 +211,11 @@ HEADER
 
 }
 
-
 .header nav a:hover {
 
     color: var(--azul-claro);
 
 }
-
 
 .btn-whatsapp {
 
@@ -272,7 +243,6 @@ HEADER
 
 }
 
-
 .btn-whatsapp:hover {
 
     background: var(--whatsapp-hover);
@@ -280,7 +250,6 @@ HEADER
     transform: translateY(-2px);
 
 }
-
 
 .menu-toggle {
 
@@ -338,7 +307,6 @@ HERO
 
 }
 
-
 .hero-content {
 
     position: relative;
@@ -348,7 +316,6 @@ HERO
     width: min(680px, 100%);
 
 }
-
 
 .hero-label {
 
@@ -366,7 +333,6 @@ HERO
 
 }
 
-
 .hero h1 {
 
     max-width: 650px;
@@ -383,7 +349,6 @@ HERO
 
 }
 
-
 .hero p {
 
     max-width: 600px;
@@ -398,13 +363,11 @@ HERO
 
 }
 
-
 .hero p strong {
 
     color: #ffffff;
 
 }
-
 
 .hero-buttons {
 
@@ -415,7 +378,6 @@ HERO
     gap: 15px;
 
 }
-
 
 .btn-primary {
 
@@ -445,7 +407,6 @@ HERO
 
 }
 
-
 .btn-primary:hover {
 
     background: var(--whatsapp-hover);
@@ -453,7 +414,6 @@ HERO
     transform: translateY(-3px);
 
 }
-
 
 .hero-location {
 
@@ -472,7 +432,6 @@ HERO
     font-weight: 600;
 
 }
-
 
 .hero-location span {
 
@@ -495,7 +454,6 @@ BENEFÍCIOS
 
 }
 
-
 .beneficios-grid {
 
     display: grid;
@@ -505,7 +463,6 @@ BENEFÍCIOS
     gap: 20px;
 
 }
-
 
 .beneficio {
 
@@ -521,7 +478,6 @@ BENEFÍCIOS
 
 }
 
-
 .beneficio:hover {
 
     transform: translateY(-5px);
@@ -529,7 +485,6 @@ BENEFÍCIOS
     box-shadow: 0 15px 35px rgba(8,43,90,0.08);
 
 }
-
 
 .beneficio-icon {
 
@@ -555,7 +510,6 @@ BENEFÍCIOS
 
 }
 
-
 .beneficio h3 {
 
     margin-bottom: 10px;
@@ -565,7 +519,6 @@ BENEFÍCIOS
     font-size: 17px;
 
 }
-
 
 .beneficio p {
 
@@ -590,7 +543,6 @@ SERVIÇO DESTAQUE
 
 }
 
-
 .servico-destaque-grid {
 
     display: grid;
@@ -603,7 +555,6 @@ SERVIÇO DESTAQUE
 
 }
 
-
 .servico-imagem {
 
     overflow: hidden;
@@ -614,7 +565,6 @@ SERVIÇO DESTAQUE
 
 }
 
-
 .servico-imagem img {
 
     height: 520px;
@@ -622,7 +572,6 @@ SERVIÇO DESTAQUE
     object-fit: cover;
 
 }
-
 
 .servico-texto h2 {
 
@@ -636,7 +585,6 @@ SERVIÇO DESTAQUE
 
 }
 
-
 .servico-texto p {
 
     margin-bottom: 18px;
@@ -649,7 +597,6 @@ SERVIÇO DESTAQUE
 
 }
 
-
 .servico-texto ul {
 
     margin: 25px 0 30px;
@@ -659,7 +606,6 @@ SERVIÇO DESTAQUE
     list-style: none;
 
 }
-
 
 .servico-texto li {
 
@@ -678,7 +624,6 @@ SERVIÇO DESTAQUE
     font-weight: 600;
 
 }
-
 
 .servico-texto li span {
 
@@ -701,7 +646,6 @@ SERVIÇOS
 
 }
 
-
 .servicos-grid {
 
     display: grid;
@@ -711,7 +655,6 @@ SERVIÇOS
     gap: 25px;
 
 }
-
 
 .servico-card {
 
@@ -729,7 +672,6 @@ SERVIÇOS
 
 }
 
-
 .servico-card:hover {
 
     transform: translateY(-6px);
@@ -737,7 +679,6 @@ SERVIÇOS
     box-shadow: 0 15px 40px rgba(8,43,90,0.10);
 
 }
-
 
 .servico-card img {
 
@@ -749,13 +690,11 @@ SERVIÇOS
 
 }
 
-
 .servico-card-content {
 
     padding: 28px;
 
 }
-
 
 .servico-card h3 {
 
@@ -766,7 +705,6 @@ SERVIÇOS
     font-size: 21px;
 
 }
-
 
 .servico-card p {
 
@@ -780,7 +718,6 @@ SERVIÇOS
 
 }
 
-
 .card-link {
 
     color: var(--azul-medio);
@@ -790,7 +727,6 @@ SERVIÇOS
     font-weight: 800;
 
 }
-
 
 .card-link:hover {
 
@@ -811,7 +747,6 @@ FAMÍLIA
 
 }
 
-
 .familia-grid {
 
     display: grid;
@@ -823,7 +758,6 @@ FAMÍLIA
     align-items: center;
 
 }
-
 
 .familia-texto h2 {
 
@@ -837,7 +771,6 @@ FAMÍLIA
 
 }
 
-
 .familia-texto p {
 
     margin-bottom: 18px;
@@ -850,13 +783,11 @@ FAMÍLIA
 
 }
 
-
 .familia-texto .btn-primary {
 
     margin-top: 15px;
 
 }
-
 
 .familia-imagem {
 
@@ -867,7 +798,6 @@ FAMÍLIA
     position: relative;
 
 }
-
 
 .familia-imagem img {
 
@@ -894,7 +824,6 @@ CARROSSEL FAMÍLIA
 
 }
 
-
 .familia-slides {
 
     display: flex;
@@ -906,7 +835,6 @@ CARROSSEL FAMÍLIA
     transition: transform 0.5s ease;
 
 }
-
 
 .familia-slide {
 
@@ -920,7 +848,6 @@ CARROSSEL FAMÍLIA
 
 }
 
-
 .familia-slide img {
 
     width: 100%;
@@ -930,7 +857,6 @@ CARROSSEL FAMÍLIA
     object-fit: cover;
 
 }
-
 
 .carrossel-btn {
 
@@ -952,15 +878,15 @@ CARROSSEL FAMÍLIA
 
     justify-content: center;
 
-    border: none;
+    border: 0;
 
     border-radius: 50%;
 
-    background: rgba(8, 43, 90, 0.75);
+    background: rgba(8,43,90,0.75);
 
     color: #ffffff;
 
-    font-size: 18px;
+    font-size: 20px;
 
     cursor: pointer;
 
@@ -968,13 +894,11 @@ CARROSSEL FAMÍLIA
 
 }
 
-
 .carrossel-btn:hover {
 
-    background: var(--azul);
+    background: rgba(8,43,90,0.95);
 
 }
-
 
 .carrossel-btn.anterior {
 
@@ -982,21 +906,19 @@ CARROSSEL FAMÍLIA
 
 }
 
-
 .carrossel-btn.proximo {
 
     right: 15px;
 
 }
 
-
 .carrossel-indicadores {
 
     position: absolute;
 
-    left: 50%;
-
     bottom: 18px;
+
+    left: 50%;
 
     transform: translateX(-50%);
 
@@ -1008,7 +930,6 @@ CARROSSEL FAMÍLIA
 
 }
 
-
 .indicador {
 
     width: 10px;
@@ -1017,11 +938,11 @@ CARROSSEL FAMÍLIA
 
     padding: 0;
 
-    border: none;
+    border: 2px solid #ffffff;
 
     border-radius: 50%;
 
-    background: rgba(255,255,255,0.6);
+    background: transparent;
 
     cursor: pointer;
 
@@ -1029,12 +950,7 @@ CARROSSEL FAMÍLIA
 
 }
 
-
 .indicador.ativo {
-
-    width: 24px;
-
-    border-radius: 10px;
 
     background: #ffffff;
 
@@ -1053,7 +969,6 @@ GALERIA
 
 }
 
-
 .galeria-grid {
 
     display: grid;
@@ -1066,7 +981,6 @@ GALERIA
 
 }
 
-
 .galeria-item {
 
     overflow: hidden;
@@ -1075,7 +989,6 @@ GALERIA
 
 }
 
-
 .galeria-item.grande {
 
     grid-column: span 2;
@@ -1083,7 +996,6 @@ GALERIA
     grid-row: span 2;
 
 }
-
 
 .galeria-item img {
 
@@ -1096,7 +1008,6 @@ GALERIA
     transition: 0.4s ease;
 
 }
-
 
 .galeria-item:hover img {
 
@@ -1117,7 +1028,6 @@ SOBRE
 
 }
 
-
 .sobre-grid {
 
     display: grid;
@@ -1130,7 +1040,6 @@ SOBRE
 
 }
 
-
 .sobre-imagem {
 
     overflow: hidden;
@@ -1139,7 +1048,6 @@ SOBRE
 
 }
 
-
 .sobre-imagem img {
 
     height: 500px;
@@ -1147,7 +1055,6 @@ SOBRE
     object-fit: cover;
 
 }
-
 
 .sobre-texto h2 {
 
@@ -1161,7 +1068,6 @@ SOBRE
 
 }
 
-
 .sobre-texto p {
 
     margin-bottom: 18px;
@@ -1173,7 +1079,6 @@ SOBRE
     line-height: 1.8;
 
 }
-
 
 .area-atendimento {
 
@@ -1193,7 +1098,6 @@ SOBRE
 
 }
 
-
 .area-atendimento strong {
 
     color: var(--azul);
@@ -1201,7 +1105,6 @@ SOBRE
     font-size: 15px;
 
 }
-
 
 .area-atendimento span {
 
@@ -1224,7 +1127,6 @@ COMO FUNCIONA
 
 }
 
-
 .passos {
 
     display: grid;
@@ -1235,7 +1137,6 @@ COMO FUNCIONA
 
 }
 
-
 .passo {
 
     text-align: center;
@@ -1243,7 +1144,6 @@ COMO FUNCIONA
     padding: 35px;
 
 }
-
 
 .passo > span {
 
@@ -1271,7 +1171,6 @@ COMO FUNCIONA
 
 }
 
-
 .passo h3 {
 
     margin-bottom: 12px;
@@ -1281,7 +1180,6 @@ COMO FUNCIONA
     font-size: 19px;
 
 }
-
 
 .passo p {
 
@@ -1306,7 +1204,6 @@ FAQ
 
 }
 
-
 .faq {
 
     width: min(850px, 100%);
@@ -1314,7 +1211,6 @@ FAQ
     margin: 0 auto;
 
 }
-
 
 .faq details {
 
@@ -1330,7 +1226,6 @@ FAQ
 
 }
 
-
 .faq summary {
 
     cursor: pointer;
@@ -1342,7 +1237,6 @@ FAQ
     font-weight: 700;
 
 }
-
 
 .faq p {
 
@@ -1379,13 +1273,11 @@ CTA
 
 }
 
-
 .cta .section-label {
 
     color: var(--azul-claro);
 
 }
-
 
 .cta h2 {
 
@@ -1399,7 +1291,6 @@ CTA
 
 }
 
-
 .cta p {
 
     margin-bottom: 30px;
@@ -1409,7 +1300,6 @@ CTA
     font-size: 16px;
 
 }
-
 
 .btn-cta {
 
@@ -1437,7 +1327,6 @@ CTA
 
 }
 
-
 .btn-cta:hover {
 
     background: var(--whatsapp-hover);
@@ -1453,14 +1342,13 @@ FOOTER
 
 footer {
 
-    /* Mesmo azul escuro usado no cabeçalho */
+    /* Mesmo azul do fundo do logo */
 
     background: #082B5A;
 
     color: #ffffff;
 
 }
-
 
 .footer-content {
 
@@ -1474,16 +1362,9 @@ footer {
 
 }
 
-
 .footer-logo {
 
-    display: block;
-
     width: 160px;
-
-    max-width: 160px;
-
-    height: auto;
 
     max-height: 60px;
 
@@ -1491,12 +1372,11 @@ footer {
 
     margin-bottom: 20px;
 
-    /* Não inverter ou alterar as cores do logo */
+    /* Mantém as cores originais do logo */
 
     filter: none;
 
 }
-
 
 .footer-content p {
 
@@ -1510,7 +1390,6 @@ footer {
 
 }
 
-
 .footer-content h3 {
 
     margin-bottom: 18px;
@@ -1520,7 +1399,6 @@ footer {
     font-size: 15px;
 
 }
-
 
 .footer-content a {
 
@@ -1534,13 +1412,11 @@ footer {
 
 }
 
-
 .footer-content a:hover {
 
     color: #ffffff;
 
 }
-
 
 .footer-bottom {
 
@@ -1551,7 +1427,6 @@ footer {
     text-align: center;
 
 }
-
 
 .footer-bottom p {
 
@@ -1600,7 +1475,6 @@ WHATSAPP FLUTUANTE
 
 }
 
-
 .whatsapp-flutuante:hover {
 
     background: var(--whatsapp-hover);
@@ -1634,19 +1508,17 @@ TABLET
 
         gap: 20px;
 
-        background: var(--azul);
+        background: #082B5A;
 
         box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 
     }
-
 
     .header nav.ativo {
 
         display: flex;
 
     }
-
 
     .menu-toggle {
 
@@ -1660,20 +1532,17 @@ TABLET
 
     }
 
-
     .header > .btn-whatsapp {
 
         display: none;
 
     }
 
-
     .beneficios-grid {
 
         grid-template-columns: repeat(2, 1fr);
 
     }
-
 
     .servico-destaque-grid,
 
@@ -1687,13 +1556,11 @@ TABLET
 
     }
 
-
     .servico-destaque-grid .servico-imagem {
 
         order: 1;
 
     }
-
 
     .servico-destaque-grid .servico-texto {
 
@@ -1701,13 +1568,11 @@ TABLET
 
     }
 
-
     .galeria-grid {
 
         grid-template-columns: repeat(2, 1fr);
 
     }
-
 
     .galeria-item.grande {
 
@@ -1715,13 +1580,11 @@ TABLET
 
     }
 
-
     .servicos-grid {
 
         grid-template-columns: repeat(2, 1fr);
 
     }
-
 
     .passos {
 
@@ -1730,7 +1593,6 @@ TABLET
         gap: 10px;
 
     }
-
 
     .footer-content {
 
@@ -1753,33 +1615,33 @@ CELULAR
 
     }
 
-
     .header {
 
         height: 70px;
 
         padding: 0 6%;
 
-    }
+        background: #082B5A;
 
+    }
 
     .logo img {
 
         width: 140px;
 
-        max-width: 140px;
-
         max-height: 50px;
 
-    }
+        filter: none;
 
+    }
 
     .header nav {
 
         top: 70px;
 
-    }
+        background: #082B5A;
 
+    }
 
     .hero {
 
@@ -1791,20 +1653,17 @@ CELULAR
 
     }
 
-
     .hero h1 {
 
         font-size: 40px;
 
     }
 
-
     .hero p {
 
         font-size: 16px;
 
     }
-
 
     .hero-buttons,
 
@@ -1814,7 +1673,6 @@ CELULAR
 
     }
 
-
     .btn-primary {
 
         width: 100%;
@@ -1822,7 +1680,6 @@ CELULAR
         text-align: center;
 
     }
-
 
     .beneficios,
 
@@ -1846,13 +1703,11 @@ CELULAR
 
     }
 
-
     .beneficios-grid {
 
         grid-template-columns: 1fr;
 
     }
-
 
     .servicos-grid {
 
@@ -1860,13 +1715,11 @@ CELULAR
 
     }
 
-
     .servico-imagem img {
 
         height: 350px;
 
     }
-
 
     .familia-imagem img,
 
@@ -1876,22 +1729,11 @@ CELULAR
 
     }
 
-
-    /* Altura do carrossel no celular */
-
     .familia-carrossel {
 
         height: 350px;
 
     }
-
-
-    .familia-slide img {
-
-        height: 350px;
-
-    }
-
 
     .galeria-grid {
 
@@ -1901,7 +1743,6 @@ CELULAR
 
     }
 
-
     .galeria-item.grande {
 
         grid-column: span 2;
@@ -1910,13 +1751,11 @@ CELULAR
 
     }
 
-
     .galeria-item img {
 
         object-fit: cover;
 
     }
-
 
     .footer-content {
 
@@ -1927,7 +1766,6 @@ CELULAR
         padding: 50px 0;
 
     }
-
 
     .whatsapp-flutuante {
 
@@ -1944,10 +1782,6 @@ CELULAR
 }
 
 
-/* =========================
-CELULAR PEQUENO
-========================= */
-
 @media (max-width: 380px) {
 
     .hero h1 {
@@ -1955,7 +1789,6 @@ CELULAR PEQUENO
         font-size: 34px;
 
     }
-
 
     .section-heading h2,
 
