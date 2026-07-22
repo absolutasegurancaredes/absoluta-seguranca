@@ -732,7 +732,7 @@ SERVIÇOS
 
 
 /* =========================
-FAMÍLIA
+FAMÍLIA E CARROSSEL
 ========================= */
 
 .protecao-familia {
@@ -785,21 +785,233 @@ FAMÍLIA
 
 }
 
+
+/* CONTAINER DA IMAGEM */
+
 .familia-imagem {
+
+    position: relative;
+
+    width: 100%;
 
     overflow: hidden;
 
     border-radius: 20px;
 
-    position: relative;
-
 }
 
-.familia-imagem img {
+
+/* CARROSSEL */
+
+.familia-carrossel {
+
+    position: relative;
+
+    width: 100%;
 
     height: 470px;
 
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #e9eef3;
+
+}
+
+
+/* ÁREA DOS SLIDES */
+
+.familia-slides {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+/* CADA SLIDE FICA NO MESMO LUGAR */
+
+.familia-slide {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition: opacity 0.4s ease;
+
+}
+
+
+/* SOMENTE O SLIDE ATIVO APARECE */
+
+.familia-slide.ativo {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    z-index: 2;
+
+}
+
+
+/* IMAGENS DO CARROSSEL */
+
+.familia-slide img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
     object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+/* BOTÕES DO CARROSSEL */
+
+.carrossel-btn {
+
+    position: absolute;
+
+    top: 50%;
+
+    z-index: 10;
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(8, 43, 90, 0.85);
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transform: translateY(-50%);
+
+    transition: 0.3s ease;
+
+}
+
+.carrossel-btn:hover {
+
+    background: var(--azul);
+
+    transform: translateY(-50%) scale(1.08);
+
+}
+
+
+/* BOTÃO ESQUERDO */
+
+.carrossel-btn.anterior {
+
+    left: 18px;
+
+}
+
+
+/* BOTÃO DIREITO */
+
+.carrossel-btn.proximo {
+
+    right: 18px;
+
+}
+
+
+/* INDICADORES */
+
+.carrossel-indicadores {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 18px;
+
+    z-index: 10;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    transform: translateX(-50%);
+
+}
+
+
+/* BOLINHAS */
+
+.indicador {
+
+    width: 10px;
+
+    height: 10px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+/* BOLINHA ATIVA */
+
+.indicador.ativo {
+
+    width: 26px;
+
+    border-radius: 10px;
+
+    background: #ffffff;
 
 }
 
@@ -1411,6 +1623,12 @@ TABLET
 
     }
 
+    .familia-carrossel {
+
+        height: 470px;
+
+    }
+
     .galeria-grid {
 
         grid-template-columns: repeat(2, 1fr);
@@ -1558,13 +1776,108 @@ CELULAR
 
     }
 
-    .familia-imagem img,
+
+    /* CARROSSEL NO CELULAR */
+
+    .familia-imagem {
+
+        width: 100%;
+
+        overflow: hidden;
+
+        border-radius: 16px;
+
+    }
+
+    .familia-carrossel {
+
+        width: 100%;
+
+        height: 350px;
+
+        overflow: hidden;
+
+        border-radius: 16px;
+
+    }
+
+    .familia-slides {
+
+        width: 100%;
+
+        height: 100%;
+
+    }
+
+    .familia-slide {
+
+        position: absolute;
+
+        width: 100%;
+
+        height: 100%;
+
+        top: 0;
+
+        left: 0;
+
+    }
+
+    .familia-slide img {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+    }
+
+    .carrossel-btn {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 17px;
+
+    }
+
+    .carrossel-btn.anterior {
+
+        left: 12px;
+
+    }
+
+    .carrossel-btn.proximo {
+
+        right: 12px;
+
+    }
+
+    .carrossel-indicadores {
+
+        bottom: 12px;
+
+    }
+
+    .familia-texto .btn-primary {
+
+        width: 100%;
+
+    }
+
+
+    /* IMAGENS DA SEÇÃO SOBRE */
 
     .sobre-imagem img {
 
         height: 350px;
 
     }
+
+
+    /* GALERIA */
 
     .galeria-grid {
 
