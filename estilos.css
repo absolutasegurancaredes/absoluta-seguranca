@@ -5,8 +5,8 @@
 --azul-medio: #3F6FA6;
 --azul-claro: #8FB7D9;
 
---azul-logo: #082B5A;
---azul-logo-escuro: #003F63;
+--azul-logo: #001F4D;
+--azul-logo-escuro: #001F4D;
 
 --branco: #F2F2F2;
 --cinza: #CFCFCF;
@@ -187,7 +187,7 @@ justify-content: space-between;
 
 gap: 25px;
 
-background: var(--azul-logo);
+background: #001F4D;
 
 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 ```
@@ -1554,7 +1554,7 @@ FOOTER
 footer {
 
 ```
-background: var(--azul-logo);
+background: #001F4D;
 
 color: #ffffff;
 ```
@@ -1646,7 +1646,7 @@ padding: 20px 5%;
 
 border-top: 1px solid rgba(255,255,255,0.2);
 
-background: var(--azul-logo-escuro);
+background: #001F4D;
 
 text-align: center;
 ```
@@ -1738,7 +1738,7 @@ TABLET
 
     gap: 20px;
 
-    background: var(--azul-logo);
+    background: #001F4D;
 
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 
