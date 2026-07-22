@@ -4,8 +4,8 @@
     --azul-medio: #3F8DBD;
     --azul-claro: #8FB7D9;
 
-    --azul-logo: #0077B6;
-    --azul-logo-escuro: #005B8F;
+    --azul-logo: #001F4D;
+    --azul-logo-escuro: #001F4D;
 
     --branco: #F2F2F2;
     --cinza: #CFCFCF;
@@ -176,10 +176,6 @@ HEADER
 
     gap: 25px;
 
-    /*
-    Azul integrado ao fundo do logo
-    */
-
     background: var(--azul-logo);
 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
@@ -205,11 +201,6 @@ HEADER
     max-height: 58px;
 
     object-fit: contain;
-
-    /*
-    Não aplicar filtro.
-    O logo original já possui suas próprias cores.
-    */
 
     filter: none;
 
@@ -1456,11 +1447,6 @@ FOOTER
 
 footer {
 
-    /*
-    Mesmo azul do cabeçalho,
-    integrado ao fundo do logo
-    */
-
     background: var(--azul-logo);
 
     color: #ffffff;
@@ -1490,10 +1476,6 @@ footer {
     object-fit: contain;
 
     margin-bottom: 20px;
-
-    /*
-    Não alterar as cores originais do logo
-    */
 
     filter: none;
 
