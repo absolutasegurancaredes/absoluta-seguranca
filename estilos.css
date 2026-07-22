@@ -98,7 +98,7 @@ button {
 }
 
 .logo img {
-    width: 150px;
+    width: 120px;
     height: auto;
     object-fit: contain;
 }
@@ -192,7 +192,8 @@ button {
     z-index: 2;
 
     width: min(1180px, 90%);
-    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: auto;
 
     max-width: 760px;
 
@@ -1053,7 +1054,7 @@ footer {
 }
 
 .footer-logo {
-    width: 170px;
+    width: 140px;
 
     margin-bottom: 20px;
 }
@@ -1197,7 +1198,7 @@ footer {
     }
 
     .logo img {
-        width: 130px;
+        width: 110px;
     }
 
     .menu-toggle {
@@ -1253,6 +1254,8 @@ footer {
 
     .hero-content {
         padding: 60px 0;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .hero h1 {
