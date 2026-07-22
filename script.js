@@ -45,17 +45,17 @@ document.addEventListener("DOMContentLoaded", function () {
        CARROSSEL CRIANÇA E PET
     ========================== */
 
-    const carousel = document.querySelector(".familia-carousel");
+    const carousel = document.querySelector(".familia-carrossel");
 
     if (carousel) {
 
         const slides = carousel.querySelectorAll(".familia-slide");
 
-        const anterior = carousel.querySelector(".carousel-prev");
+        const anterior = carousel.querySelector(".carrossel-btn.anterior");
 
-        const proximo = carousel.querySelector(".carousel-next");
+        const proximo = carousel.querySelector(".carrossel-btn.proximo");
 
-        const indicadores = carousel.querySelectorAll(".carousel-dot");
+        const indicadores = carousel.querySelectorAll(".indicador");
 
         let slideAtual = 0;
 
@@ -68,15 +68,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             if (index >= slides.length) {
+
                 slideAtual = 0;
+
             }
 
             else if (index < 0) {
+
                 slideAtual = slides.length - 1;
+
             }
 
             else {
+
                 slideAtual = index;
+
             }
 
 
@@ -102,6 +108,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
+        /* =========================
+           BOTÃO PRÓXIMO
+        ========================== */
+
         if (proximo) {
 
             proximo.addEventListener("click", function () {
@@ -113,6 +123,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
+        /* =========================
+           BOTÃO ANTERIOR
+        ========================== */
+
         if (anterior) {
 
             anterior.addEventListener("click", function () {
@@ -123,6 +137,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
 
+
+        /* =========================
+           INDICADORES
+        ========================== */
 
         indicadores.forEach(function (dot, i) {
 
