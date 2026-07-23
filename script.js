@@ -256,7 +256,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================
-       WHATSAPP
+       RASTREAMENTO DE CLIQUE NO WHATSAPP
+       GOOGLE ANALYTICS 4
     ========================== */
 
     const whatsappLinks = document.querySelectorAll(".js-whatsapp");
@@ -267,14 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (typeof gtag === "function") {
 
-                gtag(
-                    "event",
-                    "clique_whatsapp",
-                    {
-                        event_category: "Contato",
-                        event_label: "WhatsApp"
-                    }
-                );
+                gtag("event", "CliqueWhatsApp");
 
             }
 
