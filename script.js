@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (typeof gtag === "function") {
 
-                gtag("event", "CliqueWhatsApp");
+                gtag("event", "clique_whatsapp");
 
             }
 
