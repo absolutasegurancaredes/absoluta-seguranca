@@ -1414,3 +1414,11 @@ footer {
     }
 
 }
+
+
+/* ===== ÍCONE SVG DO WHATSAPP ===== */
+.whatsapp-flutuante svg{
+    width:30px;
+    height:30px;
+    display:block;
+}
